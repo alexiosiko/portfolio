@@ -1,0 +1,32 @@
+.icon-container {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+h2 {
+	color: var(--text-color-highlight);
+}
+.icon {
+	width: 30px;
+	height: 30px;
+	margin-left: 15px;
+}
+.icon:hover {
+	cursor: pointer;
+}
+.description {
+	line-height: 2rem;
+}
+.grid-item {
+	transition: 0.2s;
+	position: relative;
+}
+.grid-item:hover {
+	transition: 0.2s;
+	background-color: var(--background-color-highlight);
+}
+.frameworks {
+	position: absolute;
+	bottom: 15px;
+}

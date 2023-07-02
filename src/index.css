@@ -1,13 +1,50 @@
+:root {
+    --background-color-neutral: #0a192f; 
+    --background-color-other: #162948; 
+    --background-color-highlight: #23406d; 
+	--text-color-highlight: #59e3c5;
+    --text-color-light: #ccd6f6;
+    --text-color-dark: #909bb9;
+}
+* {
+	/* outline: red 2px dashed; */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+  }
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background-image: url(./images/background.png);
+	background-size: contain;
+	color: var(--text-color-light);
+	height: 5700px;
+    max-width: 1400px;
+	margin: auto;
+	margin-top: 800px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+	margin-top: 300px;
+}
+.container #first {
+    color: var(--text-color-highlight);
+	font-size: 30px;
+	font-family: Arial Black,  'Arial Narrow Bold', sans-serif
+}
+.container #second {
+	margin-top: -10px;
+	font-size: 60px;
+	color: var(--text-color-light);
+	font-family: Arial Black,  'Arial Narrow Bold', sans-serif
+}
+.container #third {
+	margin-top: -70px;
+	font-size: 20px;
+	color: #b0cdf1;
+	font-family: Arial Black,  'Arial Narrow Bold', sans-serif
+}
+.container #fourth {
+	margin-top: -0px;
+	font-size: 35px;
+	color: var(--text-color-light);
 }
