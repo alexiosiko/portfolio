@@ -3,8 +3,8 @@ import './Header.css';
 
 export default function Headers() {
 	return (
-		<div id="home">
-			<div id='name'>Alexi</div>
+		<div id="home" style={{ marginTop: 800 }}>
+			<div id='name'>Alexi Ikonomou</div>
 			<div style={{ textAlign: 'center', marginBottom: 500 }}>A react developer</div>
 			{/* <div className="left" style={{ width: '70%' }}>
 				<p id="first">Hi, my name is</p>

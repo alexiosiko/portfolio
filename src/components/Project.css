@@ -16,15 +16,21 @@ h2 {
 	cursor: pointer;
 }
 .description {
+	font-size: 1.4rem;
 	line-height: 2rem;
 }
 .grid-item {
 	transition: 0.2s;
 	position: relative;
-}
+	/* background: linear-gradient(to bottom, var(--background-color-other), var(--background-color-other-darker)); */
+	background: linear-gradient(to bottom, var(--background-color-other), var(--background-color-other-dark));
+	padding-left: 15px;
+	padding-right: 15px;
+	aspect-ratio: 1/1;
+	/* Optional: Add additional styling for grid items */
+  }
 .grid-item:hover {
 	transition: 0.2s;
-	background-color: var(--background-color-highlight);
 }
 .frameworks {
 	position: absolute;

@@ -1,3 +1,23 @@
-.class {
-	background-color: red;
+#nav {
+	position: fixed;
+	padding: 5px;
+    left: 50%;
+	top: 10px;
+    transform: translate(-50%, 0);
+	display: flex;
+	background-color: var(--background-color-other-dark);
+	border-radius: 20px;
+	z-index: 2;
+}
+.nav-item {
+	padding: 5px;
+	font-size: 1.2rem;
+	margin: 0 5px;
+	transition: 0.2s;
+	border-radius: 10px;
+}
+.nav-item:hover {
+	transition: 0.2s;
+	cursor: pointer;
+	background-color: aqua;
 }
