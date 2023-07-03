@@ -1,6 +1,6 @@
 import { useState } from "react"
-import Project from "./Project";
-import './Projects.css';
+import Project from "./ProjectGrid";
+import './ProjectsGrid.css';
 
 export default function Projects() {
 	const [projects] = useState([

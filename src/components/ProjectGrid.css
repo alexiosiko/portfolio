@@ -1,26 +1,28 @@
-.icon-container {
+.grid-icon-container {
 	flex: 1;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
-h2 {
+.grid-item h2 {
 	color: var(--text-color-highlight);
 }
-.icon {
+.grid-icon {
 	width: 30px;
 	height: 30px;
 	margin-left: 15px;
 }
-.icon:hover {
+.grid-icon:hover {
 	cursor: pointer;
 }
-.description {
-	font-size: 1.4rem;
+.grid-description {
+	margin-top: 50px;
+	font-size: 1.2rem;
 	line-height: 2rem;
 }
 .grid-item {
 	transition: 0.2s;
+	width: 357.5px;
 	position: relative;
 	/* background: linear-gradient(to bottom, var(--background-color-other), var(--background-color-other-darker)); */
 	background: linear-gradient(to bottom, var(--background-color-other), var(--background-color-other-dark));
@@ -32,7 +34,7 @@ h2 {
 .grid-item:hover {
 	transition: 0.2s;
 }
-.frameworks {
+.grid-frameworks {
 	position: absolute;
 	bottom: 15px;
 }
