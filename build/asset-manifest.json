@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.46cbd9a9.css",
+    "main.js": "/portfolio/static/js/main.6da7145a.js",
+    "static/media/reddit-clone.png": "/portfolio/static/media/reddit-clone.d92f5a46c4643fb7b3ca.png",
+    "static/media/background.png": "/portfolio/static/media/background.f46eba515114a650c195.png",
+    "static/media/Brazilian-Clay.ttf": "/portfolio/static/media/Brazilian-Clay.ef9e73c90fc873d5e367.ttf",
+    "static/media/github-icon.png": "/portfolio/static/media/github-icon.517a062d8e323e13b2a1.png",
+    "index.html": "/portfolio/index.html",
+    "main.46cbd9a9.css.map": "/portfolio/static/css/main.46cbd9a9.css.map",
+    "main.6da7145a.js.map": "/portfolio/static/js/main.6da7145a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46cbd9a9.css",
+    "static/js/main.6da7145a.js"
+  ]
+}
