@@ -1,10 +1,10 @@
 :root {
-    --background-color-neutral: #231f20; 
-    --background-color-other: #2f2f2f;
-    --background-color-other-dark: #272727;
-    --background-color-highlight: #23406d; 
-	--text-color-highlight: #59e3c5;
-    --text-color-light: #ccd6f6;
+    --background-color-neutral: #13121f; 
+    --background-color-other: #211f3f;
+    --background-color-other-dark: #2b2851;
+    --background-color-highlight: rgb(65, 118, 197); 
+	--text-color-highlight: #00d4f9;
+    --text-color-light: #ffffff;
     --text-color-dark: #909bb9;
 }
 @font-face {
@@ -22,6 +22,7 @@ html {
 body {
 	background-image: url(./images/background.png);
 	background-size: cover;
+	background-color: var(--background-color-neutral);
 	color: var(--text-color-light);
 	height: 5700px;
     max-width: 1200px;

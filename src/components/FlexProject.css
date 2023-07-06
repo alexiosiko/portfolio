@@ -5,8 +5,9 @@
 	height: 400px;
 }
 .flex-left-right-container h1 {
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 40px;
 	color: var(--text-color-highlight);
 }
 .flex-left-right-container .flex-description {

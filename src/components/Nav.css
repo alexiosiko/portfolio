@@ -7,7 +7,7 @@
 	display: flex;
 	background-color: var(--background-color-other-dark);
 	border-radius: 20px;
-	z-index: 2;
+	z-index: 10;
 }
 .nav-item {
 	padding: 5px;
@@ -19,5 +19,5 @@
 .nav-item:hover {
 	transition: 0.2s;
 	cursor: pointer;
-	background-color: aqua;
+	background-color: var(--background-color-highlight);
 }
