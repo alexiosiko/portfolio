@@ -1,8 +1,8 @@
 :root {
-    --background-color-neutral: #13121f; 
-    --background-color-other: #211f3f;
+    --background-color-neutral: #2b2851; 
+    --background-color-other: #1D2433;
     --background-color-other-dark: #2b2851;
-    --background-color-highlight: rgb(65, 118, 197); 
+    --background-color-highlight: #4176c5;
 	--text-color-highlight: #00d4f9;
     --text-color-light: #ffffff;
     --text-color-dark: #909bb9;
@@ -14,43 +14,16 @@
 
 * {
 	/* outline: red 2px dashed; */
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+	font-family: 'Custom Font';
 }
 html {
 	scroll-behavior: smooth;
   }
 body {
-	background-image: url(./images/background.png);
-	background-size: cover;
+	/* background-image: url(./images/background.png);
+	background-size: cover; */
 	background-color: var(--background-color-neutral);
 	color: var(--text-color-light);
 	height: 5700px;
-    max-width: 1200px;
-	margin: auto;
-}
-
-.container {
-	margin-top: 300px;
-}
-.container #first {
-    color: var(--text-color-highlight);
-	font-size: 30px;
-	font-family: Arial Black,  'Arial Narrow Bold', sans-serif
-}
-.container #second {
-	margin-top: -10px;
-	font-size: 60px;
-	color: var(--text-color-light);
-	font-family: Arial Black,  'Arial Narrow Bold', sans-serif
-}
-.container #third {
-	margin-top: -70px;
-	font-size: 20px;
-	color: #b0cdf1;
-	font-family: Arial Black,  'Arial Narrow Bold', sans-serif
-}
-.container #fourth {
-	margin-top: -0px;
-	font-size: 35px;
-	color: var(--text-color-light);
 }
