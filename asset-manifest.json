@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.98528478.css",
-    "main.js": "/portfolio/static/js/main.4394f264.js",
+    "main.css": "/portfolio/static/css/main.f75d68aa.css",
+    "main.js": "/portfolio/static/js/main.950cb94b.js",
     "static/media/cards-icon.png": "/portfolio/static/media/cards-icon.f5c840b4614dc09aef78.png",
     "static/media/castle-npc.png": "/portfolio/static/media/castle-npc.cdf4dc25b2b1ed2e1991.png",
     "static/media/reddit-clone.png": "/portfolio/static/media/reddit-clone.d92f5a46c4643fb7b3ca.png",
@@ -12,11 +12,11 @@
     "static/media/calculator.png": "/portfolio/static/media/calculator.91f7a7791f1295c7690c.png",
     "static/media/hero-devices.svg": "/portfolio/static/media/hero-devices.ca82e97c349a897082b6268dd7f8d733.svg",
     "index.html": "/portfolio/index.html",
-    "main.98528478.css.map": "/portfolio/static/css/main.98528478.css.map",
-    "main.4394f264.js.map": "/portfolio/static/js/main.4394f264.js.map"
+    "main.f75d68aa.css.map": "/portfolio/static/css/main.f75d68aa.css.map",
+    "main.950cb94b.js.map": "/portfolio/static/js/main.950cb94b.js.map"
   },
   "entrypoints": [
-    "static/css/main.98528478.css",
-    "static/js/main.4394f264.js"
+    "static/css/main.f75d68aa.css",
+    "static/js/main.950cb94b.js"
   ]
 }
