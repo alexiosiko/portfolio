@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ad7b609b.css",
-    "main.js": "/portfolio/static/js/main.f262d9b1.js",
+    "main.css": "/portfolio/static/css/main.30d1916f.css",
+    "main.js": "/portfolio/static/js/main.4394f264.js",
+    "static/media/cards-icon.png": "/portfolio/static/media/cards-icon.f5c840b4614dc09aef78.png",
     "static/media/castle-npc.png": "/portfolio/static/media/castle-npc.cdf4dc25b2b1ed2e1991.png",
-    "static/media/background.png": "/portfolio/static/media/background.e75e5550fc792d760b5d.png",
     "static/media/reddit-clone.png": "/portfolio/static/media/reddit-clone.d92f5a46c4643fb7b3ca.png",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.9832f5f8859f91e93ed2.pdf",
     "static/media/slimes-icon.png": "/portfolio/static/media/slimes-icon.dba660759ae0afb08de1.png",
     "static/media/Brazilian-Clay.ttf": "/portfolio/static/media/Brazilian-Clay.ef9e73c90fc873d5e367.ttf",
     "static/media/bilge.png": "/portfolio/static/media/bilge.08f9cde76d5fe1b37f2e.png",
     "static/media/calculator.png": "/portfolio/static/media/calculator.91f7a7791f1295c7690c.png",
+    "static/media/hero-devices.svg": "/portfolio/static/media/hero-devices.ca82e97c349a897082b6268dd7f8d733.svg",
     "index.html": "/portfolio/index.html",
-    "main.ad7b609b.css.map": "/portfolio/static/css/main.ad7b609b.css.map",
-    "main.f262d9b1.js.map": "/portfolio/static/js/main.f262d9b1.js.map"
+    "main.30d1916f.css.map": "/portfolio/static/css/main.30d1916f.css.map",
+    "main.4394f264.js.map": "/portfolio/static/js/main.4394f264.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad7b609b.css",
-    "static/js/main.f262d9b1.js"
+    "static/css/main.30d1916f.css",
+    "static/js/main.4394f264.js"
   ]
 }
