@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f75d68aa.css",
-    "main.js": "/portfolio/static/js/main.950cb94b.js",
+    "main.js": "/portfolio/static/js/main.30bb521a.js",
     "static/media/cards-icon.png": "/portfolio/static/media/cards-icon.f5c840b4614dc09aef78.png",
     "static/media/castle-npc.png": "/portfolio/static/media/castle-npc.cdf4dc25b2b1ed2e1991.png",
     "static/media/reddit-clone.png": "/portfolio/static/media/reddit-clone.d92f5a46c4643fb7b3ca.png",
@@ -13,10 +13,10 @@
     "static/media/hero-devices.svg": "/portfolio/static/media/hero-devices.ca82e97c349a897082b6268dd7f8d733.svg",
     "index.html": "/portfolio/index.html",
     "main.f75d68aa.css.map": "/portfolio/static/css/main.f75d68aa.css.map",
-    "main.950cb94b.js.map": "/portfolio/static/js/main.950cb94b.js.map"
+    "main.30bb521a.js.map": "/portfolio/static/js/main.30bb521a.js.map"
   },
   "entrypoints": [
     "static/css/main.f75d68aa.css",
-    "static/js/main.950cb94b.js"
+    "static/js/main.30bb521a.js"
   ]
 }
