@@ -1,14 +1,14 @@
 .grid-container {
 	margin: auto;
-	max-width: 1000px;
+	max-width: 1100px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-gap: 15px;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 35px;
 }
 
 .grid-item {
 	transition: 0.2s;
-	height: 200px;
+	aspect-ratio: 1.5;
 	border-radius: 20px;
 	position: relative;
 	display: flex;
@@ -25,19 +25,22 @@
 }
 
 .grid-item-details {
-	color: black;
+	color: var(--text-color-light);
 	position: absolute;
 	padding: 5%;
 	top: 50%;
 	left: 0;
 	width: 90%;
 	height: 90%;
-	background-color: var(--text-color-dark);
+	background-color: var(--background-color-other);
 	opacity: 0;
 	transition: 0.5s;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	justify-content: center; /* Added */
+	align-items: center; /* Added */
+
 }
 .grid-item-details p {
 	font-size: 1.3rem;
@@ -49,17 +52,23 @@
 	width: 50px;
 	text-align: center;
 	margin: 5px;
-	background-color: var(--background-color-highlight);
+	background-color: var(--background-color-other-dark);
+
 	border-radius: 10px;
 	padding: 5px;
 }
 .grid-item-details button:hover {
 	cursor: pointer;
-	background-color: var(--text-color-highlight);
+	background-color: var(--background-color-highlight);
 	;
 }
 
 .grid-item:hover .grid-item-details {
 	opacity: 1;
 	top: 0px;
+}
+.grid-item-details .framework {
+	margin: 6px;
+	font-size: 1rem;
+	width: fit-content;
 }

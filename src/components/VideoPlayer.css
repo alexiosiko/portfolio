@@ -1,0 +1,22 @@
+.video-player-container {
+	transition: 1s;
+	padding: 10px;
+	background-color: var(--background-color-other);
+	border-radius: 20px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 500px;
+}
+button {
+	all: unset;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: var(--background-color-other);
+	margin: auto;
+	display: flex;
+}
+button:hover {
+	cursor: pointer;
+	background-color: var(--background-color-highlight);
+}

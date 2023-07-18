@@ -5,15 +5,15 @@ import Nav from 			'./components/Nav.js';
 import Header from 			'./components/Header.js';
 import ProjectsGrid from 	'./components/GridProjects.js';
 import Title from './components/Title.js';
-import Introduction from 	'./components/Introduction.js';
+import Contact from './components/Contact.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
 		<Nav />
 		<Header />
-		<Introduction />
 		<Title />
 		<ProjectsGrid />
+		<Contact />
 	</React.StrictMode>
 );
