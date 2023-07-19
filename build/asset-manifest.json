@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f75d68aa.css",
-    "main.js": "/portfolio/static/js/main.30bb521a.js",
-    "static/media/cards-icon.png": "/portfolio/static/media/cards-icon.f5c840b4614dc09aef78.png",
-    "static/media/castle-npc.png": "/portfolio/static/media/castle-npc.cdf4dc25b2b1ed2e1991.png",
-    "static/media/reddit-clone.png": "/portfolio/static/media/reddit-clone.d92f5a46c4643fb7b3ca.png",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.9832f5f8859f91e93ed2.pdf",
-    "static/media/slimes-icon.png": "/portfolio/static/media/slimes-icon.dba660759ae0afb08de1.png",
-    "static/media/Brazilian-Clay.ttf": "/portfolio/static/media/Brazilian-Clay.ef9e73c90fc873d5e367.ttf",
-    "static/media/bilge.png": "/portfolio/static/media/bilge.08f9cde76d5fe1b37f2e.png",
-    "static/media/calculator.png": "/portfolio/static/media/calculator.91f7a7791f1295c7690c.png",
-    "static/media/hero-devices.svg": "/portfolio/static/media/hero-devices.ca82e97c349a897082b6268dd7f8d733.svg",
-    "index.html": "/portfolio/index.html",
-    "main.f75d68aa.css.map": "/portfolio/static/css/main.f75d68aa.css.map",
-    "main.30bb521a.js.map": "/portfolio/static/js/main.30bb521a.js.map"
+    "main.css": "/static/css/main.8473142b.css",
+    "main.js": "/static/js/main.2c779de3.js",
+    "static/media/cards-icon.png": "/static/media/cards-icon.f5c840b4614dc09aef78.png",
+    "static/media/castle-npc.png": "/static/media/castle-npc.cdf4dc25b2b1ed2e1991.png",
+    "static/media/reddit-clone.png": "/static/media/reddit-clone.d92f5a46c4643fb7b3ca.png",
+    "static/media/resume.pdf": "/static/media/resume.9832f5f8859f91e93ed2.pdf",
+    "static/media/slimes-icon.png": "/static/media/slimes-icon.dba660759ae0afb08de1.png",
+    "static/media/Brazilian-Clay.ttf": "/static/media/Brazilian-Clay.ef9e73c90fc873d5e367.ttf",
+    "static/media/bilge.png": "/static/media/bilge.08f9cde76d5fe1b37f2e.png",
+    "static/media/calculator.png": "/static/media/calculator.91f7a7791f1295c7690c.png",
+    "static/media/hero-devices.svg": "/static/media/hero-devices.ca82e97c349a897082b6268dd7f8d733.svg",
+    "index.html": "/index.html",
+    "main.8473142b.css.map": "/static/css/main.8473142b.css.map",
+    "main.2c779de3.js.map": "/static/js/main.2c779de3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f75d68aa.css",
-    "static/js/main.30bb521a.js"
+    "static/css/main.8473142b.css",
+    "static/js/main.2c779de3.js"
   ]
 }
