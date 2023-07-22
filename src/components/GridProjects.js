@@ -38,12 +38,15 @@ export default function Projects() {
 			videoId: 'r7YQPCpkdQc',
 		},
 		{
-			title: 'Calculator',
-			description: 'Calculator that got me first started with react-native',
-			backgroundImage: require('./../images/calculator.png'),
-			tags: ['React Native', 'useReducer'],
-			github: 'https://github.com/alexiosiko/calculator-react-native',
+			title: 'A Night with Santa',
+			description: 'A silly hide and escape from santa game',
+			backgroundImage: require('./../images/santa.png'),
+			tags: ['Unity', 'Pathfinding'],
+			demo: 'https://alexiosiko.github.io/A-Night-A-Mr.-Waters-/',
+			github: 'https://github.com/alexiosiko/A-Night-A-Mr.-Waters-',
+			videoId: 'bY5-YUApvAY',
 		},
+
 		{
 			title: 'Castle Mystery (NPC Interaction)',
 			description: 'An interactive first person shooter. Talk to people, pick up and use objects to unlock interactables and open new paths',
@@ -63,14 +66,13 @@ export default function Projects() {
 			videoId: 'e8b_tnTwuWw',
 		},
 		{
-			title: 'A Night with Santa',
-			description: 'A silly hide and escape from santa game',
-			backgroundImage: require('./../images/reddit-clone.png'),
-			tags: ['Unity', 'C#'],
-			demo: 'https://alexiosiko.github.io/A-Night-A-Mr.-Waters-/',
-			github: 'https://github.com/alexiosiko/A-Night-A-Mr.-Waters-',
-			videoId: 'xNRJwmlRBNU',
+			title: 'Calculator',
+			description: 'Calculator that got me first started with react-native',
+			backgroundImage: require('./../images/calculator.png'),
+			tags: ['React Native', 'useReducer'],
+			github: 'https://github.com/alexiosiko/calculator-react-native',
 		},
+
 
 	]);
 
