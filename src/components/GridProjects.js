@@ -22,7 +22,7 @@ export default function Projects() {
 		},
 		{
 			title: 'Card Game (Steam Multiplayer)',
-			description: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTkage Manager, and npm.',
+			description: 'A turned based multiplayer card game made using Netcode that has Steam Multiplayer implementation',
 			backgroundImage: require('./../images/cards-icon.png'),
 			tags: ['Unity', 'C#', "Netcode"],
 			github: 'https://github.com/alexiosiko/Card-Game-Multiplayer',
