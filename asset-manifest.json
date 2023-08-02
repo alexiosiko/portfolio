@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.a8ccbe04.css",
-    "main.js": "/static/js/main.0ac31aa9.js",
+    "main.js": "/static/js/main.062d1edd.js",
     "static/media/cards-icon.png": "/static/media/cards-icon.f5c840b4614dc09aef78.png",
     "static/media/castle-npc.png": "/static/media/castle-npc.cdf4dc25b2b1ed2e1991.png",
     "static/media/santa.png": "/static/media/santa.8bad82b7aa1c9e005234.png",
     "static/media/reddit-clone.png": "/static/media/reddit-clone.d92f5a46c4643fb7b3ca.png",
-    "static/media/resume.pdf": "/static/media/resume.6f39741bf04c0ff0fe55.pdf",
+    "static/media/resume.pdf": "/static/media/resume.4a7d7c2012fcb27bec77.pdf",
     "static/media/slimes-icon.png": "/static/media/slimes-icon.dba660759ae0afb08de1.png",
     "static/media/Brazilian-Clay.ttf": "/static/media/Brazilian-Clay.ef9e73c90fc873d5e367.ttf",
     "static/media/bilge.png": "/static/media/bilge.08f9cde76d5fe1b37f2e.png",
@@ -14,10 +14,10 @@
     "static/media/hero-devices.svg": "/static/media/hero-devices.ca82e97c349a897082b6268dd7f8d733.svg",
     "index.html": "/index.html",
     "main.a8ccbe04.css.map": "/static/css/main.a8ccbe04.css.map",
-    "main.0ac31aa9.js.map": "/static/js/main.0ac31aa9.js.map"
+    "main.062d1edd.js.map": "/static/js/main.062d1edd.js.map"
   },
   "entrypoints": [
     "static/css/main.a8ccbe04.css",
-    "static/js/main.0ac31aa9.js"
+    "static/js/main.062d1edd.js"
   ]
 }
