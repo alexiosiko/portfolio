@@ -1,0 +1,20 @@
+/* Assuming "grid-container" is the class of the container element wrapping the projects */
+.grid-container {
+	row-gap: 100px;
+	margin-top: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Center the items horizontally */
+  }
+  
+  /* Assuming "grid-container > div" represents each project item */
+  .grid-container > div {
+	margin-bottom: 120px;
+	flex: 0 0 calc(50% - 1rem); /* Two-column layout with 1rem margin between items */
+	margin: 0.5rem; /* Adjust the margin between items as needed */
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center the content inside each project item */
+	text-align: center; /* Center the text content inside each project item */
+  }
+  
