@@ -1,4 +1,13 @@
 nav {
-	background-color: red;
-	text-align: right;
+	position: fixed;
+	top: 0;
+	margin: 5px;
+	right: 10%;
+}
+nav a {
+	all: unset;
+	margin: 10px;
+}
+nav a:hover {
+	cursor: pointer;
 }
