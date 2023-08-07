@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.a8ccbe04.css",
-    "main.js": "/static/js/main.062d1edd.js",
-    "static/media/cards-icon.png": "/static/media/cards-icon.f5c840b4614dc09aef78.png",
-    "static/media/castle-npc.png": "/static/media/castle-npc.cdf4dc25b2b1ed2e1991.png",
-    "static/media/santa.png": "/static/media/santa.8bad82b7aa1c9e005234.png",
-    "static/media/reddit-clone.png": "/static/media/reddit-clone.d92f5a46c4643fb7b3ca.png",
-    "static/media/resume.pdf": "/static/media/resume.4a7d7c2012fcb27bec77.pdf",
-    "static/media/slimes-icon.png": "/static/media/slimes-icon.dba660759ae0afb08de1.png",
-    "static/media/Brazilian-Clay.ttf": "/static/media/Brazilian-Clay.ef9e73c90fc873d5e367.ttf",
-    "static/media/bilge.png": "/static/media/bilge.08f9cde76d5fe1b37f2e.png",
-    "static/media/calculator.png": "/static/media/calculator.91f7a7791f1295c7690c.png",
-    "static/media/hero-devices.svg": "/static/media/hero-devices.ca82e97c349a897082b6268dd7f8d733.svg",
-    "index.html": "/index.html",
-    "main.a8ccbe04.css.map": "/static/css/main.a8ccbe04.css.map",
-    "main.062d1edd.js.map": "/static/js/main.062d1edd.js.map"
+    "main.css": "/portfolio/static/css/main.73d67fd6.css",
+    "main.js": "/portfolio/static/js/main.75d7f2e0.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/gem.png": "/portfolio/static/media/gem.f33d590457acc4719cb3.png",
+    "static/media/marker.png": "/portfolio/static/media/marker.d911ecbc8e325d7ba1a5.png",
+    "static/media/users-alt.png": "/portfolio/static/media/users-alt.0c00c1617fbc1144e25b.png",
+    "static/media/reddit.png": "/portfolio/static/media/reddit.73003a45669ab0838dab.png",
+    "static/media/phone.png": "/portfolio/static/media/phone.a291e43168f1ba1653a0.png",
+    "static/media/playing-cards.png": "/portfolio/static/media/playing-cards.052d35af796453dab751.png",
+    "static/media/bug.png": "/portfolio/static/media/bug.902481ad26a581378047.png",
+    "static/media/hat-santa.png": "/portfolio/static/media/hat-santa.19f5680f1f26c77378d2.png",
+    "static/media/calculator.png": "/portfolio/static/media/calculator.fe34b66cb75378e05bf6.png",
+    "static/media/email.png": "/portfolio/static/media/email.2d8b9eb1d5859c11ceb2.png",
+    "index.html": "/portfolio/index.html",
+    "main.73d67fd6.css.map": "/portfolio/static/css/main.73d67fd6.css.map",
+    "main.75d7f2e0.js.map": "/portfolio/static/js/main.75d7f2e0.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8ccbe04.css",
-    "static/js/main.062d1edd.js"
+    "static/css/main.73d67fd6.css",
+    "static/js/main.75d7f2e0.js"
   ]
 }
