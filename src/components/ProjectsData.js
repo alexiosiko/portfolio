@@ -16,6 +16,15 @@ export const projects = [
 		videoId: 'https://www.youtube.com/watch?v=vrnBL6YnJ48',
 	},
 	{
+		title: 'Castle Mystery (NPC Interaction)',
+		description: 'An interactive first person shooter. Talk to people, pick up and use objects to unlock interactables and open new paths',
+		image: require('./../resources/users-alt.png'),
+		tags: ['Unity', 'NPC Behaviours', 'Inventory', 'Props'],
+		demo: 'https://alexiosiko.github.io/Castle-Npcs/',
+		github: 'https://github.com/alexiosiko/Castle-Npcs',
+		videoId: 'https://www.youtube.com/watch?v=227b1uaZAvI',
+	},
+	{
 		title: 'Bilging Puzzle',
 		description: 'A bewjewled liked puzzle game that taught me sprites, basic animations, and puzzle algorithums',
 		image: require('./../resources/gem.png'),
@@ -34,15 +43,7 @@ export const projects = [
 		videoId: 'https://www.youtube.com/watch?v=bY5-YUApvAY',
 	},
 
-	{
-		title: 'Castle Mystery (NPC Interaction)',
-		description: 'An interactive first person shooter. Talk to people, pick up and use objects to unlock interactables and open new paths',
-		image: require('./../resources/users-alt.png'),
-		tags: ['Unity', 'NPC Behaviours', 'Inventory', 'Props'],
-		demo: 'https://alexiosiko.github.io/Castle-Npcs/',
-		github: 'https://github.com/alexiosiko/Castle-Npcs',
-		videoId: 'https://www.youtube.com/watch?v=227b1uaZAvI',
-	},
+
 	{
 		title: '2D Slime Game',
 		description: 'Break dirts blocks to reveal slime that interact with and spread nutrients',

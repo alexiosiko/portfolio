@@ -8,7 +8,7 @@ export default function Projects() {
 
 	return (
 		<>
-			<h1 className="hidden" style={{ marginTop: 600, marginBottom: 50, fontSize: 50 }} >Projects</h1>
+			<h1 className="hidden" style={{ marginTop: 400, marginBottom: 50, fontSize: 50 }} >Projects</h1>
 			<hr style={{ marginBottom: 100 }}/>
 			<div className="grid-container" >
 				{projects.map((project, index) => 

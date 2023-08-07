@@ -1,6 +1,6 @@
 import './App.css';
 import Navigation from './components/Navigation.js';
-import Intro from './Intro.js';
+import Intro from './components/Intro.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
 import 'bootstrap/dist/css/bootstrap.css';
