@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.b63656b4.css",
-    "main.js": "/static/js/main.0feb9da8.js",
+    "main.css": "/static/css/main.16a469a4.css",
+    "main.js": "/static/js/main.7ba8ff3b.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/react-resume.pdf": "/static/media/react-resume.4a7d7c2012fcb27bec77.pdf",
     "static/media/gem.png": "/static/media/gem.f33d590457acc4719cb3.png",
     "static/media/marker.png": "/static/media/marker.d911ecbc8e325d7ba1a5.png",
     "static/media/users-alt.png": "/static/media/users-alt.0c00c1617fbc1144e25b.png",
     "static/media/reddit.png": "/static/media/reddit.73003a45669ab0838dab.png",
     "static/media/phone.png": "/static/media/phone.a291e43168f1ba1653a0.png",
+    "static/media/github.png": "/static/media/github.517a062d8e323e13b2a1.png",
     "static/media/playing-cards.png": "/static/media/playing-cards.052d35af796453dab751.png",
     "static/media/bug.png": "/static/media/bug.902481ad26a581378047.png",
     "static/media/hat-santa.png": "/static/media/hat-santa.19f5680f1f26c77378d2.png",
     "static/media/calculator.png": "/static/media/calculator.fe34b66cb75378e05bf6.png",
+    "static/media/face.png": "/static/media/face.d771ce048763d59b6efd.png",
+    "static/media/resume.png": "/static/media/resume.b3c9254a9008fb1c9b33.png",
     "static/media/email.png": "/static/media/email.2d8b9eb1d5859c11ceb2.png",
     "index.html": "/index.html",
-    "main.b63656b4.css.map": "/static/css/main.b63656b4.css.map",
-    "main.0feb9da8.js.map": "/static/js/main.0feb9da8.js.map",
+    "main.16a469a4.css.map": "/static/css/main.16a469a4.css.map",
+    "main.7ba8ff3b.js.map": "/static/js/main.7ba8ff3b.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b63656b4.css",
-    "static/js/main.0feb9da8.js"
+    "static/css/main.16a469a4.css",
+    "static/js/main.7ba8ff3b.js"
   ]
 }
