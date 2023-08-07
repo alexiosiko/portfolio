@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap";
+import { Button, Row } from "react-bootstrap";
 import { projects } from "./ProjectsData";
 import './Projects.css';
 
@@ -18,6 +18,11 @@ export default function Projects() {
 						<p>
 							{project.description}
 						</p>
+						<Row>
+							{project.tags && project.tags.map((tag) =>
+								<p className="tag" style={{ width: 'auto'}}>{tag}</p>
+							)}
+						</Row>
 						<div>
 							{project.demo && <Button onClick={() => window.open(project.demo, '_blank')} className="m-2">Demo</Button>}
 							{project.videoId && <Button onClick={() => window.open(project.videoId, '_blank')} className="m-2">Video</Button>}

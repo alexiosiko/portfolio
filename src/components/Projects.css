@@ -16,4 +16,8 @@
 	align-items: center; /* Center the content inside each project item */
 	text-align: center; /* Center the text content inside each project item */
 }
+
+.grid-container .tag {
+	color: rgb(163, 163, 163);
+}
   
