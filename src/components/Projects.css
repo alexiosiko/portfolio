@@ -8,6 +8,7 @@
 
 	/* Assuming "grid-container > div" represents each project item */
 .grid-container > div {
+	min-width: 400px;
 	margin-bottom: 120px;
 	flex: 0 0 calc(50% - 1rem); /* Two-column layout with 1rem margin between items */
 	margin: 0.5rem; /* Adjust the margin between items as needed */
