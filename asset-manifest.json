@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d47833a.css",
-    "main.js": "/static/js/main.22136a4e.js",
+    "main.css": "/static/css/main.6c280564.css",
+    "main.js": "/static/js/main.5a810d36.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/react-resume.pdf": "/static/media/react-resume.773ba62263cefb84277e.pdf",
+    "static/media/react-resume.pdf": "/static/media/react-resume.c8f102665693c3542afd.pdf",
     "static/media/gem.png": "/static/media/gem.f33d590457acc4719cb3.png",
     "static/media/marker.png": "/static/media/marker.d911ecbc8e325d7ba1a5.png",
+    "static/media/weather.png": "/static/media/weather.d2382b78874ce326d851.png",
     "static/media/users-alt.png": "/static/media/users-alt.0c00c1617fbc1144e25b.png",
     "static/media/reddit.png": "/static/media/reddit.73003a45669ab0838dab.png",
     "static/media/phone.png": "/static/media/phone.a291e43168f1ba1653a0.png",
@@ -18,12 +19,12 @@
     "static/media/resume.png": "/static/media/resume.b3c9254a9008fb1c9b33.png",
     "static/media/email.png": "/static/media/email.2d8b9eb1d5859c11ceb2.png",
     "index.html": "/index.html",
-    "main.9d47833a.css.map": "/static/css/main.9d47833a.css.map",
-    "main.22136a4e.js.map": "/static/js/main.22136a4e.js.map",
+    "main.6c280564.css.map": "/static/css/main.6c280564.css.map",
+    "main.5a810d36.js.map": "/static/js/main.5a810d36.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d47833a.css",
-    "static/js/main.22136a4e.js"
+    "static/css/main.6c280564.css",
+    "static/js/main.5a810d36.js"
   ]
 }
