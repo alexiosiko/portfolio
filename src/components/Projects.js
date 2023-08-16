@@ -1,5 +1,5 @@
 import { Button, Row } from "react-bootstrap";
-import { projects } from "./ProjectsData";
+import { projects } from "./../data/ProjectsData";
 import './Projects.css';
 
 export default function Projects() {
