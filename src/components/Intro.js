@@ -1,27 +1,29 @@
-import './Intro.css';
-import Face from './../resources/face.png';
-import { Image } from "react-bootstrap";
-import Github from './../resources/github.png';
-import Resume from './../resources/resume.png';
-import ResumePdf from './../resources/react-resume.pdf';
+import Face from './../resources/images/face.png';
+import Github from './../resources/icons/github.png';
+import Resume from './../resources/icons/resume.png';
+import ResumePdf from './../resources/files/react-resume.pdf';
 
 export default function Intro() {
 	return (
-		<div className="hidden">
-			<img src={Face} height={200} width={130} style={{marginTop: 300, marginBottom: 100}} alt='face' />
-			<div style={{  margin: 'auto', marginBottom: 50, marginTop: -40}}> 
-				<Image onClick={() => window.open("https://github.com/alexiosiko", '_blank')} src={Github} className='m-2 icon' alt='github'/>
-				<Image onClick={() => window.open(ResumePdf, '_blank')} src={Resume} className='m-2 icon'alt='resume'/>
+		<div>
+			<img className='m-auto mt-96 mb-24' src={Face} width={200} height={200} alt='face' />
+			<div className='flex justify-center'> 
+				<img  width={50} height={50} onClick={() => window.open("https://github.com/alexiosiko", '_blank')} src={Github} className='m-2 icon cursor-pointer' alt='github'/>
+				<img  width={50} height={50} onClick={() => window.open(ResumePdf, '_blank')} src={Resume} className='m-2 icon cursor-pointer'alt='resume'/>
 			</div>
-			<h1 style={{ fontSize: 60}}>
-				Hi, I'm Alexi
-			</h1>
-			<h3 style={{ lineHeight: 1.7, marginTop: 50}}>
-				Over the past 2 years, I have worked on various projects
-				in Unity C# and FullStack with React.js and created some exciting outcomes.
-				If you're looking for a fast-learning and enthusiastic
-				developer, let's connect to collaborate on some amazing
-				projects!
+			<div className='flex justify-center'>
+
+				<h1 style={{ fontSize: 80}}>
+					Hi, I'm 
+					
+				</h1>
+				<h1 className=' bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text' style={{ fontSize: 80, marginLeft: 25}}>
+					Alexi
+					
+				</h1>
+			</div>
+			<h3 className='text-3xl max-w-4xl m-auto' style={{ lineHeight: '2.5rem' }}>
+				Over the past 2 years, I have worked on my own with different tools like React-Native, Next.js 13, Unity ...
 			</h3>
 		</div>
 	)
