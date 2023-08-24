@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.237f4523.css",
-    "main.js": "/static/js/main.473b7e67.js",
+    "main.css": "/static/css/main.c2443dca.css",
+    "main.js": "/static/js/main.711d282e.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/react-resume.pdf": "/static/media/react-resume.1f1ae2364f2912ebe93e.pdf",
+    "static/media/Poppins-Bold.otf": "/static/media/Poppins-Bold.b5c5cbad4c3e1e9f4fec.otf",
+    "static/media/Poppins-Regular.otf": "/static/media/Poppins-Regular.1421a94e04ced16b1ffc.otf",
+    "static/media/Poppins-Thin.otf": "/static/media/Poppins-Thin.85a73d99edcc0f4b9a7d.otf",
     "static/media/gem.png": "/static/media/gem.f33d590457acc4719cb3.png",
     "static/media/marker.png": "/static/media/marker.d911ecbc8e325d7ba1a5.png",
     "static/media/weather.png": "/static/media/weather.d2382b78874ce326d851.png",
@@ -19,12 +22,12 @@
     "static/media/resume.png": "/static/media/resume.b3c9254a9008fb1c9b33.png",
     "static/media/email.png": "/static/media/email.2d8b9eb1d5859c11ceb2.png",
     "index.html": "/index.html",
-    "main.237f4523.css.map": "/static/css/main.237f4523.css.map",
-    "main.473b7e67.js.map": "/static/js/main.473b7e67.js.map",
+    "main.c2443dca.css.map": "/static/css/main.c2443dca.css.map",
+    "main.711d282e.js.map": "/static/js/main.711d282e.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.237f4523.css",
-    "static/js/main.473b7e67.js"
+    "static/css/main.c2443dca.css",
+    "static/js/main.711d282e.js"
   ]
 }
