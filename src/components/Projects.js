@@ -11,15 +11,15 @@ export default function Projects() {
 			<hr style={{ marginBottom: 100 }}/>
 			<div className="columns-2" >
 				{projects.map((project, index) => 
-					<div className="mb-24 hide" key={index}>
+					<div className="mb-24 hide h-96" key={index}>
 						<img className="m-auto" src={project.image} alt="any" style={imageStyle} />
 						<h2 className="text-4xl mb-6 bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">{project.title}</h2>
-						<p className="description text-lg max-w-md m-auto">
+						<p className="description text-lg max-w-md m-auto max-h-16 h-full">
 							{project.description}
 						</p>
 						<div className="flex justify-center gap-5 mt-8">
 							{project.tags && project.tags.map((tag, index) =>
-								<p className="tag" key={index} style={{ width: 'auto'}}>{tag}</p>
+								<p className="tag text-gray-400" key={index} style={{ width: 'auto'}}>{tag}</p>
 							)}
 						</div>
 						<div className="mt-6">
