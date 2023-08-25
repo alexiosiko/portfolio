@@ -7,8 +7,8 @@ export default function Contact() {
 	const rowStyle = "flex justify-center mt-12 text-1xl";
 	return (
 		<div style={{ marginTop: 300, paddingBottom: 500 }}  >
-			<h1 className='text-5xl'>Info</h1>
-			<hr className="mt-24 mb-24"  />
+			<h1 className='hide text-5xl'>Info</h1>
+			<hr className="hide mt-24 mb-24"  />
 			<div className={`${rowStyle} mt-18 hide`}>
 				<div>
 					<img src={Marker} width={30} height={30} className={imageStyle} alt='contact' /></div>

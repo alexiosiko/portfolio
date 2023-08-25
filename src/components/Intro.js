@@ -24,8 +24,10 @@ export default function Intro() {
 					
 				</h1>
 			</div>
-			<h3 className='text-3xl max-w-4xl m-auto hide' style={{ lineHeight: '2.5rem' }}>
-				Over the past 2 years, I have worked on my own with different tools like React-Native, Next.js 13, Unity ...
+			<h3 className='text-3xl max-w-4xl m-auto mt-24 mb-24  hide' style={{ lineHeight: '2.5rem' }}>
+				I have worked on my own developing with many<br /> tools such as React-Native, Next.js 13, Unity ... <br />
+				I design and code beautifully simple <br /> things,  and I love what I do.
+
 			</h3>
 		</div>
 	)

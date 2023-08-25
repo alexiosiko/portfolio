@@ -6,9 +6,9 @@ export default function Projects() {
 	const buttonStyle = "m-2 bg-blue-400 hover:bg-blue-200 transition p-2 rounded-lg text-black";
 
 	return (
-		<div >
-			<h1 style={{ marginTop: 400, marginBottom: 100, fontSize: 50 }} >Projects</h1>
-			<hr style={{ marginBottom: 100 }}/>
+		<div>
+			<h1 className="hide" style={{ marginTop: 400, marginBottom: 100, fontSize: 50 }} >Projects</h1>
+			<hr className="hide" style={{ marginBottom: 100 }}/>
 			<div className="columns-2" >
 				{projects.map((project, index) => 
 					<div className="mb-24 hide h-96" key={index}>
