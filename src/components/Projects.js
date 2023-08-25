@@ -6,20 +6,20 @@ export default function Projects() {
 	const buttonStyle = "m-2 bg-blue-400 hover:bg-blue-200 transition p-2 rounded-lg text-black";
 
 	return (
-		<div className="">
+		<div >
 			<h1 style={{ marginTop: 400, marginBottom: 100, fontSize: 50 }} >Projects</h1>
 			<hr style={{ marginBottom: 100 }}/>
 			<div className="columns-2" >
 				{projects.map((project, index) => 
-					<div className="mb-24" key={index}>
+					<div className="mb-24 hide" key={index}>
 						<img className="m-auto" src={project.image} alt="any" style={imageStyle} />
 						<h2 className="text-4xl mb-6 bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">{project.title}</h2>
 						<p className="description text-lg max-w-md m-auto">
 							{project.description}
 						</p>
 						<div className="flex justify-center gap-5 mt-8">
-							{project.tags && project.tags.map((tag) =>
-								<p className="tag" style={{ width: 'auto'}}>{tag}</p>
+							{project.tags && project.tags.map((tag, index) =>
+								<p className="tag" key={index} style={{ width: 'auto'}}>{tag}</p>
 							)}
 						</div>
 						<div className="mt-6">

@@ -1,7 +1,8 @@
 import Intro from './components/Intro.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
-
+import './lib/scroll-animations.css';
+import './lib/scroll-animations.js';
 
 function App() {
 	return (
