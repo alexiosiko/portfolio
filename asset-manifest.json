@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2256f86e.css",
-    "main.js": "/static/js/main.3a03a00d.js",
+    "main.css": "/static/css/main.fbbd6e05.css",
+    "main.js": "/static/js/main.ed915dce.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/react-resume.pdf": "/static/media/react-resume.1f1ae2364f2912ebe93e.pdf",
     "static/media/Poppins-Bold.otf": "/static/media/Poppins-Bold.b5c5cbad4c3e1e9f4fec.otf",
@@ -15,6 +15,7 @@
     "static/media/phone.png": "/static/media/phone.a291e43168f1ba1653a0.png",
     "static/media/github.png": "/static/media/github.517a062d8e323e13b2a1.png",
     "static/media/playing-cards.png": "/static/media/playing-cards.052d35af796453dab751.png",
+    "static/media/user-add.png": "/static/media/user-add.7a199b5910a0743f1b7e.png",
     "static/media/bug.png": "/static/media/bug.902481ad26a581378047.png",
     "static/media/hat-santa.png": "/static/media/hat-santa.19f5680f1f26c77378d2.png",
     "static/media/calculator.png": "/static/media/calculator.fe34b66cb75378e05bf6.png",
@@ -22,12 +23,12 @@
     "static/media/resume.png": "/static/media/resume.b3c9254a9008fb1c9b33.png",
     "static/media/email.png": "/static/media/email.2d8b9eb1d5859c11ceb2.png",
     "index.html": "/index.html",
-    "main.2256f86e.css.map": "/static/css/main.2256f86e.css.map",
-    "main.3a03a00d.js.map": "/static/js/main.3a03a00d.js.map",
+    "main.fbbd6e05.css.map": "/static/css/main.fbbd6e05.css.map",
+    "main.ed915dce.js.map": "/static/js/main.ed915dce.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2256f86e.css",
-    "static/js/main.3a03a00d.js"
+    "static/css/main.fbbd6e05.css",
+    "static/js/main.ed915dce.js"
   ]
 }
