@@ -9,9 +9,9 @@ export default function Projects() {
 		<div>
 			<h1 className="hide" style={{ marginTop: 400, marginBottom: 100, fontSize: 50 }} >Projects</h1>
 			<hr className="hide" style={{ marginBottom: 100 }}/>
-			<div className="columns-2" >
+			<div className="grid grid-cols-2" >
 				{projects.map((project, index) => 
-					<div className="mb-24 hide h-96" key={index}>
+					<div className="mb-24 h-96 hide" key={index}>
 						<img className="m-auto" src={project.image} alt="any" style={imageStyle} />
 						<h2 className="text-4xl mb-6 bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">{project.title}</h2>
 						<p className="description text-lg max-w-md m-auto max-h-16 h-full">

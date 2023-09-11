@@ -8,6 +8,14 @@ export const projects = [
 		videoId: 'https://www.youtube.com/watch?v=VScaI4mdjIk',
 	},
 	{
+		title: 'Mechanic Auto Shop',
+		description: 'Request an appoinment online for free and wait for mechanic to confirm appointment',
+		image: require('./../resources/icons/car-mechanic.png'),
+		tags: ['Nextjs-13', 'Clerk', "Shadcn-ui", "Tailwind"],
+		github: 'https://github.com/alexiosiko/evvg-autoshop',
+		demo: 'https://evvg-autoshop.vercel.app/',
+	},
+	{
 		title: 'Weather App',
 		description: 'Used OpenWeatherMap API for weather data',
 		image: require('./../resources/icons/weather.png'),
