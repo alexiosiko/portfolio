@@ -21,7 +21,9 @@ export default function Intro() {
 				</h1>
 			</div>
 			<h3 className='text-3xl max-w-4xl m-auto mt-24  hide' style={{ lineHeight: '2.5rem' }}>
-				I have worked on my own developing with many<br /> tools such as React-Native, Next.js 13, Unity ... <br />
+				I have worked on my own developing with many<br /> tools such as React-Native, Next.js 13, Unity ... 
+				<br />
+				<br />
 				I design and code beautifully simple <br /> things,  and I love what I do.
 			</h3>
 			<div className='flex justify-center mt-8 hide'> 
