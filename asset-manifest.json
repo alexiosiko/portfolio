@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.57485754.css",
-    "main.js": "/static/js/main.79728979.js",
+    "main.js": "/static/js/main.e532f27a.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/react-resume.pdf": "/static/media/react-resume.9e942b87219371052200.pdf",
     "static/media/Poppins-Bold.otf": "/static/media/Poppins-Bold.b5c5cbad4c3e1e9f4fec.otf",
@@ -24,11 +24,11 @@
     "static/media/car-mechanic.png": "/static/media/car-mechanic.46ca6a49daaacc1d55a1.png",
     "index.html": "/index.html",
     "main.57485754.css.map": "/static/css/main.57485754.css.map",
-    "main.79728979.js.map": "/static/js/main.79728979.js.map",
+    "main.e532f27a.js.map": "/static/js/main.e532f27a.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57485754.css",
-    "static/js/main.79728979.js"
+    "static/js/main.e532f27a.js"
   ]
 }
