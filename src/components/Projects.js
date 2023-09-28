@@ -11,7 +11,7 @@ export default function Projects() {
 			<hr className="hide" style={{ marginBottom: 100 }}/>
 			<div className="grid grid-cols-2" >
 				{projects.map((project, index) => 
-					<div className="mb-24 h-96 hide" key={index}>
+					<div className="mb-8 h-96 hide" key={index}>
 						<img className="m-auto" src={project.image} alt="any" style={imageStyle} />
 						<h2 className="text-4xl mb-6 bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">{project.title}</h2>
 						<p className="description text-lg max-w-md m-auto max-h-16 h-full">
