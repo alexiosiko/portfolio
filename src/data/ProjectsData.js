@@ -1,23 +1,23 @@
 export const projects = [
 	{
 		title: 'Reddit Clone',
-		description: 'A reddit clone created in React Native. Has get and fetch requests for posts and uploads',
+		description: 'A reddit clone created in React Native. Upload a post to our database, and view all posts in home page',
 		image: require('./../resources/icons/reddit.png'),
-		tags: ['React-Native', 'Python Backend'],
+		tags: ['React-Native', 'Python Backend', 'MongoDB'],
 		github: 'https://github.com/alexiosiko/reddit-clone',
 		videoId: 'https://www.youtube.com/watch?v=VScaI4mdjIk',
 	},
 	{
 		title: 'Mechanic Auto Shop',
-		description: 'Request an appoinment online for free and wait for mechanic to confirm appointment',
+		description: 'Request an appoinment online for free and wait for mechanic to reach back to you',
 		image: require('./../resources/icons/car-mechanic.png'),
-		tags: ['Nextjs-13', 'Clerk', "Shadcn-ui", "Tailwind"],
+		tags: ['Nextjs-13', 'User-Auth', "Shadcn-ui", "Tailwind"],
 		github: 'https://github.com/alexiosiko/evvg-autoshop',
 		demo: 'https://evvg-autoshop.vercel.app/',
 	},
 	{
 		title: 'Weather App',
-		description: 'Used OpenWeatherMap API for weather data',
+		description: 'Basic OpenWeatherMap API display for this weeks weather forecast',
 		image: require('./../resources/icons/weather.png'),
 		tags: ['Typescript', 'Weather API'],
 		github: 'https://github.com/alexiosiko/weather-app',
