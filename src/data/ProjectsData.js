@@ -1,7 +1,7 @@
 export const projects = [
 	{
 		title: 'Reddit Clone',
-		description: 'A reddit clone created in React Native. Upload a post to our database, and view all posts in home page',
+		description: 'A reddit clone created in React Native. Upload a post or view all posts in home page',
 		image: require('./../resources/icons/reddit.png'),
 		tags: ['React-Native', 'Python Backend', 'MongoDB'],
 		github: 'https://github.com/alexiosiko/reddit-clone',
@@ -62,7 +62,7 @@ export const projects = [
 
 	{
 		title: '2D Slime Game',
-		description: 'Break dirts blocks to reveal slime that interact with and spread nutrients',
+		description: 'Break dirts blocks to reveal slime that interact with and spread nutrients. (Bad code practises)',
 		image: require('./../resources/icons/bug.png'),
 		tags: ['Unity', 'Animations', 'Entity Behaviours'],
 		demo: 'https://alexiosiko.github.io/No-Heroes-Allowed/',
