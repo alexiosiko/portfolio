@@ -1,5 +1,7 @@
 window.onload = function () {
-
+	// If javascript is NOT enabled, disable this fade animatinons
+	if (!document.querySelector) 
+		return;
 	// Your scroll animation logic here
 	// ...
 	let elementsArray = document.querySelectorAll(".hide");

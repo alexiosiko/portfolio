@@ -1,11 +1,10 @@
 .hide {
-	opacity: 0;
+	opacity: 1;
 	transition: all 1.5s;
 	transition-delay: 0.2s;
 	transform: translateY(150px);
 }
 
 .show {
-	opacity: 1;
 	transform: translateY(0px);
 }
