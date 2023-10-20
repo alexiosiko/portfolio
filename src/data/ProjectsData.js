@@ -16,14 +16,6 @@ export const projects = [
 		demo: 'https://evvg-autoshop.vercel.app/',
 	},
 	{
-		title: 'Weather App',
-		description: 'Basic OpenWeatherMap API display for this weeks weather forecast',
-		image: require('./../resources/icons/weather.png'),
-		tags: ['Typescript', 'Weather API'],
-		github: 'https://github.com/alexiosiko/weather-app',
-		demo: 'https://alexiosiko.github.io/weather-app/',
-	},
-	{
 		title: 'Card Game (Steam Multiplayer)',
 		description: 'A turned based multiplayer card game made using Netcode that has Steam Multiplayer implementation',
 		image: require('./../resources/icons/playing-cards.png'),
