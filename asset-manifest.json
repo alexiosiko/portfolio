@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2b43cb8c.css",
-    "main.js": "/static/js/main.66fb03af.js",
+    "main.js": "/static/js/main.13f3ff48.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/react-resume.pdf": "/static/media/react-resume.9e942b87219371052200.pdf",
     "static/media/Poppins-Bold.otf": "/static/media/Poppins-Bold.b5c5cbad4c3e1e9f4fec.otf",
@@ -9,7 +9,6 @@
     "static/media/Poppins-Thin.otf": "/static/media/Poppins-Thin.85a73d99edcc0f4b9a7d.otf",
     "static/media/gem.png": "/static/media/gem.f33d590457acc4719cb3.png",
     "static/media/marker.png": "/static/media/marker.d911ecbc8e325d7ba1a5.png",
-    "static/media/weather.png": "/static/media/weather.d2382b78874ce326d851.png",
     "static/media/users-alt.png": "/static/media/users-alt.0c00c1617fbc1144e25b.png",
     "static/media/reddit.png": "/static/media/reddit.73003a45669ab0838dab.png",
     "static/media/phone.png": "/static/media/phone.a291e43168f1ba1653a0.png",
@@ -24,11 +23,11 @@
     "static/media/car-mechanic.png": "/static/media/car-mechanic.46ca6a49daaacc1d55a1.png",
     "index.html": "/index.html",
     "main.2b43cb8c.css.map": "/static/css/main.2b43cb8c.css.map",
-    "main.66fb03af.js.map": "/static/js/main.66fb03af.js.map",
+    "main.13f3ff48.js.map": "/static/js/main.13f3ff48.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b43cb8c.css",
-    "static/js/main.66fb03af.js"
+    "static/js/main.13f3ff48.js"
   ]
 }
