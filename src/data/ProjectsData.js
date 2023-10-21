@@ -21,7 +21,7 @@ export const projects = [
 		image: require('./../resources/icons/playing-cards.png'),
 		tags: ['Unity', 'C#', "Netcode"],
 		github: 'https://github.com/alexiosiko/Card-Game-Multiplayer',
-		videoId: 'https://www.youtube.com/watch?v=vrnBL6YnJ48',
+		videoId: 'https://www.youtube.com/watch?v=bEibVrJBd38',
 	},
 	{
 		title: 'Castle Mystery (NPC Interaction)',
