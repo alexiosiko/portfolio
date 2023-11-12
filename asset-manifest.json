@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.2b43cb8c.css",
-    "main.js": "/static/js/main.7f8b879c.js",
+    "main.js": "/static/js/main.32d92369.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/react-resume.pdf": "/static/media/react-resume.9e942b87219371052200.pdf",
     "static/media/Poppins-Bold.otf": "/static/media/Poppins-Bold.b5c5cbad4c3e1e9f4fec.otf",
     "static/media/Poppins-Regular.otf": "/static/media/Poppins-Regular.1421a94e04ced16b1ffc.otf",
     "static/media/Poppins-Thin.otf": "/static/media/Poppins-Thin.85a73d99edcc0f4b9a7d.otf",
+    "static/media/react-resume.pdf": "/static/media/react-resume.162b0f0c9fd8c376c6e7.pdf",
     "static/media/gem.png": "/static/media/gem.f33d590457acc4719cb3.png",
     "static/media/marker.png": "/static/media/marker.d911ecbc8e325d7ba1a5.png",
     "static/media/users-alt.png": "/static/media/users-alt.0c00c1617fbc1144e25b.png",
@@ -23,11 +23,11 @@
     "static/media/car-mechanic.png": "/static/media/car-mechanic.46ca6a49daaacc1d55a1.png",
     "index.html": "/index.html",
     "main.2b43cb8c.css.map": "/static/css/main.2b43cb8c.css.map",
-    "main.7f8b879c.js.map": "/static/js/main.7f8b879c.js.map",
+    "main.32d92369.js.map": "/static/js/main.32d92369.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b43cb8c.css",
-    "static/js/main.7f8b879c.js"
+    "static/js/main.32d92369.js"
   ]
 }
