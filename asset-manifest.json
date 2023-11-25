@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b43cb8c.css",
-    "main.js": "/static/js/main.c58528ae.js",
+    "main.css": "/static/css/main.44b77d3e.css",
+    "main.js": "/static/js/main.44e0e0c8.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/react-resume.pdf": "/static/media/react-resume.34f9e59f6d1c97093cdf.pdf",
+    "static/media/resume.pdf": "/static/media/resume.1faf5cb42d22179ed097.pdf",
     "static/media/Poppins-Bold.otf": "/static/media/Poppins-Bold.b5c5cbad4c3e1e9f4fec.otf",
     "static/media/Poppins-Regular.otf": "/static/media/Poppins-Regular.1421a94e04ced16b1ffc.otf",
     "static/media/Poppins-Thin.otf": "/static/media/Poppins-Thin.85a73d99edcc0f4b9a7d.otf",
@@ -17,17 +17,16 @@
     "static/media/bug.png": "/static/media/bug.902481ad26a581378047.png",
     "static/media/hat-santa.png": "/static/media/hat-santa.19f5680f1f26c77378d2.png",
     "static/media/calculator.png": "/static/media/calculator.fe34b66cb75378e05bf6.png",
-    "static/media/face.png": "/static/media/face.d771ce048763d59b6efd.png",
     "static/media/resume.png": "/static/media/resume.b3c9254a9008fb1c9b33.png",
     "static/media/email.png": "/static/media/email.2d8b9eb1d5859c11ceb2.png",
     "static/media/car-mechanic.png": "/static/media/car-mechanic.46ca6a49daaacc1d55a1.png",
     "index.html": "/index.html",
-    "main.2b43cb8c.css.map": "/static/css/main.2b43cb8c.css.map",
-    "main.c58528ae.js.map": "/static/js/main.c58528ae.js.map",
+    "main.44b77d3e.css.map": "/static/css/main.44b77d3e.css.map",
+    "main.44e0e0c8.js.map": "/static/js/main.44e0e0c8.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b43cb8c.css",
-    "static/js/main.c58528ae.js"
+    "static/css/main.44b77d3e.css",
+    "static/js/main.44e0e0c8.js"
   ]
 }
