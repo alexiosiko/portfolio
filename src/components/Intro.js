@@ -1,7 +1,6 @@
-import Face from './../resources/images/face.png';
 import Github from './../resources/icons/github.png';
 import Resume from './../resources/icons/resume.png';
-import ResumePdf from './../resources/files/react-resume.pdf';
+import ResumePdf from './../resources/files/resume.pdf';
 
 import './Intro.css';
 
