@@ -19,13 +19,11 @@ export default function About() {
     >
 		<SectionHeading>About me</SectionHeading>
 		<p className="mb-6">
-				Welcome to my portfolio! My journey began in the dynamic world of 2D and 3D game development, 
-				where I mastered scripting, animations, sounds, and online networking.
-		</p>
-		<p className="mb-6">
-			Through my studies in school, I was introduce to react and that's when all the doors to web developing and app developing opened.
-			I've learned both in the classroom and through online videos and courses, acquiring the essential skills for development.
-			This portfolio show cases a few projects I've created that demonstrate critical skills required for development.
+			I'm all about problem-solving – love cracking those puzzles wide open.
+			Teaming up with others? It's like a cool collab, bouncing ideas and making
+			things happen. Tech? I geek out on that stuff, staying in the loop and using
+			new concepts to . This ain't just a job; it's my mix of passion,
+			teamwork, and keeping the learning vibe alive.
 		</p>
 		<p className="mb-6">
 			When I'm not coding, I enjoy playing
