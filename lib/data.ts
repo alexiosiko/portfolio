@@ -1,38 +1,38 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import redditImg from "@/resources/reddit.png";
 import mechanicImg from "@/resources/mechanic.png";
 import cardGameImg from "@/resources/cardGame.png";
 import castleImg from "@/resources/castle.png";
+import techStartup from "@/resources/tech-startup.png";
 
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
-] as const;
+	{
+	  name: "Home",
+	  hash: "#home",
+	},
+	{
+	  name: "About",
+	  hash: "#about",
+	},
+	{
+	  name: "Projects",
+	  hash: "#projects",
+	},
+	{
+	  name: "Skills",
+	  hash: "#skills",
+	},
+	{
+	  name: "Experience",
+	  hash: "#experience",
+	},
+	{
+	  name: "Contact",
+	  hash: "#contact",
+	},
+  ] as const;
 
 export const experiencesData: any = [
   {
@@ -65,7 +65,9 @@ export const experiencesData: any = [
 	],
 	icon: React.createElement(CgWorkAlt),
     date: "2021 - 2023",
+	
   }
+  
 ] as const;
 
 export const projectsData = [
@@ -83,6 +85,14 @@ export const projectsData = [
       "Book an appointment for your car repair! Request an appoinment online for free and wait for a mechanic to reach back to you.",
     tags: ["Nextjs-13", "User-Auth", "Shadcn-ui", "Tailwind"],
     imageUrl: mechanicImg,
+	githubUrl: "https://github.com/alexiosiko/evvg-autoshop"
+  },
+  {
+    title: "Tech Start-up Website",
+    description:
+      "Nextjs website for a tech-startup designed with figma.",
+    tags: ["Nextjs-13", "forms", "tailwind", "figma"],
+    imageUrl: techStartup,
 	githubUrl: "https://github.com/alexiosiko/evvg-autoshop"
   },
   {
