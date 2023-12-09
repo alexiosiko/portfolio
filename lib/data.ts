@@ -93,7 +93,7 @@ export const projectsData = [
       "Nextjs website for a tech-startup designed with figma.",
     tags: ["Nextjs-13", "forms", "tailwind", "figma"],
     imageUrl: techStartup,
-	githubUrl: "https://github.com/alexiosiko/evvg-autoshop"
+	githubUrl: "https://github.com/alexiosiko/tech-startup"
   },
   {
     title: "Card Game (Steam Multiplayer)",
