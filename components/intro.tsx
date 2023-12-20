@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import ProfilePic from '@/resources/alexi-profile-photo.jpg';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -20,17 +21,13 @@ export default function Intro() {
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
-      <div className="flex items-center justify-center">
-        <div className="relative mt-48">
-          
-        </div>
-      </div>
-
       <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
+		transition={{ delay: 0.3 }}
       >
+		<Image src={ProfilePic} alt="profile-pic" height={60} className="m-auto mb-12 rounded-full" />
         <span className="font-bold">Hello, I'm Alexi.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">2 years</span> of experience.

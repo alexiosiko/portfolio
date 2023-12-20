@@ -6,6 +6,7 @@ import mechanicImg from "@/resources/mechanic.png";
 import cardGameImg from "@/resources/cardGame.png";
 import castleImg from "@/resources/castle.png";
 import techStartup from "@/resources/tech-startup.png";
+import reactTimelineVeritcal from "@/resources/react-timeline-vertical.png";
 
 export const links = [
 	{
@@ -78,6 +79,13 @@ export const projectsData = [
     tags: ["React-Native", "Python Backend", "MongoDB"],
     imageUrl: redditImg,
 	githubUrl: "https://github.com/alexiosiko/reddit-clone"
+  },
+  {
+	title: "react-timeline-vertical",
+	description: "A fully customizeable open-source node package",
+	tags: ["node", "vite", "tailwindcss"],
+	imageUrl: reactTimelineVeritcal,
+	githubUrl: "https://github.com/alexiosiko/react-timeline-vertical",
   },
   {
     title: "Mechanic Auto Shop",
