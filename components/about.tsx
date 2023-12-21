@@ -26,15 +26,9 @@ export default function About() {
 		<p className="mb-6">
 
 			Programming isn't a job to me, it's puzzles, and I love cracking puzzles.
-			My dream is to become a professional software developer and to be working <br />
-			with successful projects that <span className="w-2">I am proud of</span>.
-			teamwork, and keeping the learning vibe alive.
+			My dream is to become a professional software developer and to be working
+			with successful projects that <br /> <span className="w-2">I am proud of</span>.
 		</p>
-		<p className="mb-6">
-			When I'm not coding, I enjoy playing
-			video games, art and drawing, card games, and playing bouzouki.
-		</p>
-
 	</motion.section>
   );
 }
