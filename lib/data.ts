@@ -5,7 +5,7 @@ import redditImg from "@/resources/reddit.png";
 import mechanicImg from "@/resources/mechanic.png";
 import cardGameImg from "@/resources/cardGame.png";
 import castleImg from "@/resources/castle.png";
-import techStartup from "@/resources/tech-startup.png";
+import devOlympus from "@/resources/devolympus.png";
 import reactTimelineVeritcal from "@/resources/react-timeline-vertical.png";
 
 export const links = [
@@ -100,7 +100,7 @@ export const projectsData = [
     description:
       "Nextjs website for a tech-startup designed with figma.",
     tags: ["Nextjs-13", "forms", "tailwind", "figma"],
-    imageUrl: techStartup,
+    imageUrl: devOlympus,
 	githubUrl: "https://github.com/alexiosiko/tech-startup"
   },
   {
