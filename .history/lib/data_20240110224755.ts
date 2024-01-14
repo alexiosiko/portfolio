@@ -81,28 +81,28 @@ export const projectsData = [
 	githubUrl: "https://github.com/alexiosiko/reddit-clone"
   },
   {
-	  title: "Tech Start-up Website",
-	  description:
-	  "Nextjs website for a tech-startup designed with figma.",
-	  tags: ["Nextjs-13", "forms", "tailwind", "figma"],
-	  imageUrl: devOlympus,
-	  githubUrl: "https://github.com/alexiosiko/tech-startup"
-	},
-	{
-		title: "Mechanic Auto Shop",
-		description:
-		"A company website by the name EVVG",
-		tags: ["Nextjs", "Shadcn-ui", "Tailwind", "Framer-Motion"],
-		imageUrl: mechanicImg,
-		githubUrl: "https://github.com/alexiosiko/evvg-autoshop"
-	  },
-	{
-	  title: "react-timeline-vertical",
-	  description: "A fully customizeable open-source node package",
-	  tags: ["node", "vite", "tailwindcss"],
-	  imageUrl: reactTimelineVeritcal,
-	  githubUrl: "https://github.com/alexiosiko/react-timeline-vertical",
-	},
+	title: "react-timeline-vertical",
+	description: "A fully customizeable open-source node package",
+	tags: ["node", "vite", "tailwindcss"],
+	imageUrl: reactTimelineVeritcal,
+	githubUrl: "https://github.com/alexiosiko/react-timeline-vertical",
+  },
+  {
+    title: "Mechanic Auto Shop",
+    description:
+      "Book an appointment for your car repair! Request an appoinment online for free and wait for a mechanic to reach back to you.",
+    tags: ["Nextjs-13", "User-Auth", "Shadcn-ui", "Tailwind"],
+    imageUrl: mechanicImg,
+	githubUrl: "https://github.com/alexiosiko/evvg-autoshop"
+  },
+  {
+    title: "Tech Start-up Website",
+    description:
+      "Nextjs website for a tech-startup designed with figma.",
+    tags: ["Nextjs-13", "forms", "tailwind", "figma"],
+    imageUrl: devOlympus,
+	githubUrl: "https://github.com/alexiosiko/tech-startup"
+  },
   {
     title: "Card Game (Steam Multiplayer)",
     description:

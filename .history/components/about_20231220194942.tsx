@@ -25,7 +25,7 @@ export default function About() {
 		</p>
 		<p className="mb-6">
 
-			Programming is puzzles to me, and I love cracking puzzles.
+			Programming isn't a job to me, it's puzzles, and I love cracking puzzles.
 			My dream is to become a professional software developer and to be working
 			with successful projects that <br /> <span className="w-2">I am proud of</span>.
 		</p>

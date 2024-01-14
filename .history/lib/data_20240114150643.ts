@@ -91,8 +91,8 @@ export const projectsData = [
 	{
 		title: "Mechanic Auto Shop",
 		description:
-		"A company website by the name EVVG",
-		tags: ["Nextjs", "Shadcn-ui", "Tailwind", "Framer-Motion"],
+		"A ",
+		tags: ["Nextjs-13", "User-Auth", "Shadcn-ui", "Tailwind"],
 		imageUrl: mechanicImg,
 		githubUrl: "https://github.com/alexiosiko/evvg-autoshop"
 	  },
