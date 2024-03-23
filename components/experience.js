@@ -46,15 +46,15 @@ export default function Experience() {
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
-				<p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-			  <ul style={{ listStyleType: "inherit"}}>
-				{item.description.map((_item, index) => 
-					<li key={index}>
-						{_item}
-					</li>)
-				}
-			  </ul>
-              </p>
+				<div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+				<ul style={{ listStyleType: "inherit"}}>
+					{item.description.map((_item, index) => 
+						<li key={index}>
+							{_item}
+						</li>)
+					}
+				</ul>
+              </div>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

@@ -7,7 +7,7 @@ import cardGameImg from "@/resources/cardGame.png";
 import castleImg from "@/resources/castle.png";
 import devOlympus from "@/resources/devolympus.png";
 import reactTimelineVeritcal from "@/resources/react-timeline-vertical.png";
-
+import musicalNotesTraining from "@/resources/musicalnotestraining.png";
 export const links = [
 	{
 	  name: "Home",
@@ -72,21 +72,21 @@ export const experiencesData: any = [
 ] as const;
 
 export const projectsData = [
-  {
-    title: "Reddit Clone",
-    description:
-      "A reddit clone created in React Native. Upload a post or view all posts in home page.",
-    tags: ["React-Native", "Python Backend", "MongoDB"],
-    imageUrl: redditImg,
-	githubUrl: "https://github.com/alexiosiko/reddit-clone"
-  },
-  {
-	  title: "Tech Start-up Website",
-	  description:
-	  "Nextjs website for a tech-startup designed with figma.",
-	  tags: ["Nextjs-13", "forms", "tailwind", "figma"],
-	  imageUrl: devOlympus,
-	  githubUrl: "https://github.com/alexiosiko/tech-startup"
+	{
+		title: "Reddit Clone",
+		description:
+		"A reddit clone created in React Native. Upload a post or view all posts in home page.",
+		tags: ["React-Native", "Python Backend", "MongoDB"],
+		imageUrl: redditImg,
+		githubUrl: "https://github.com/alexiosiko/reddit-clone"
+	},
+	{
+		title: "Musical Notes Training",
+		description:
+		"Train your musical ear by earing and finding the notes on many supported instruments!",
+		tags: ["Stripe Payments", "Clerk User Auth", "Nextjs"],
+		imageUrl: musicalNotesTraining,
+		githubUrl: "https://musicalnotestraining.com/"
 	},
 	{
 		title: "Mechanic Auto Shop",
@@ -95,44 +95,52 @@ export const projectsData = [
 		tags: ["Nextjs", "Shadcn-ui", "Tailwind", "Framer-Motion"],
 		imageUrl: mechanicImg,
 		githubUrl: "https://github.com/alexiosiko/evvg-autoshop"
-	  },
-	{
-	  title: "react-timeline-vertical",
-	  description: "A fully customizeable open-source node package",
-	  tags: ["node", "vite", "tailwindcss"],
-	  imageUrl: reactTimelineVeritcal,
-	  githubUrl: "https://github.com/alexiosiko/react-timeline-vertical",
 	},
-  {
-    title: "Card Game (Steam Multiplayer)",
-    description:
-      "A turned based multiplayer card game made using Netcode that has Steam Multiplayer implementation.",
-    tags: ["Unity", "C#", "Netcode Networking"],
-    imageUrl: cardGameImg,
-	githubUrl: "https://github.com/alexiosiko/Card-Game-Multiplayer"
-  },
-  {
-    title: "Castle Mystery (NPC Interaction)",
-    description:
-      "An interactive first person shooter. Talk to people, pick up and use objects to unlock interactables and open new paths.",
-    tags: ["Unity", "NPC Behaviours", "Inventory Management", "Props and Interactables"],
-    imageUrl: castleImg,
-	githubUrl: "https://github.com/alexiosiko/Castle-Npcs"
-  },
+	{
+		title: "Dev Olympus",
+		description:
+		"Nextjs website for a tech-startup designed with figma.",
+		tags: ["Nextjs-13", "forms", "tailwind", "figma"],
+		imageUrl: devOlympus,
+		githubUrl: "https://github.com/alexiosiko/tech-startup"
+	},
+	{
+		title: "Card Game (Steam Multiplayer)",
+		description:
+		"A turned based multiplayer card game made using Netcode that has Steam Multiplayer implementation.",
+		tags: ["Unity", "C#", "Netcode Networking"],
+		imageUrl: cardGameImg,
+		githubUrl: "https://github.com/alexiosiko/Card-Game-Multiplayer"
+		},
+		{
+		title: "react-timeline-vertical",
+		description: "A fully customizeable open-source node package",
+		tags: ["node", "vite", "tailwindcss"],
+		imageUrl: reactTimelineVeritcal,
+		githubUrl: "https://github.com/alexiosiko/react-timeline-vertical",
+		},
+	{
+		title: "Castle Mystery (NPC Interaction)",
+		description:
+		"An interactive first person shooter. Talk to people, pick up and use objects to unlock interactables and open new paths.",
+		tags: ["Unity", "NPC Behaviours", "Inventory Management", "Props and Interactables"],
+		imageUrl: castleImg,
+		githubUrl: "https://github.com/alexiosiko/Castle-Npcs"
+	},
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Tailwind",
-  "MongoDB",
-  "Express",
-  "Python",
-  "Django",
-  "C#",
+	"HTML",
+	"CSS",
+	"JavaScript",
+	"TypeScript",
+	"React",
+	"Next",
+	"Node.js",
+	"Tailwind",
+	"MongoDB",
+	"Express",
+	"Python",
+	"Django",
+	"C#",
 ] as const;
