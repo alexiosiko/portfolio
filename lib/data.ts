@@ -86,7 +86,7 @@ export const projectsData = [
 		"Train your musical ear by earing and finding the notes on many supported instruments!",
 		tags: ["Stripe Payments", "Clerk User Auth", "Nextjs"],
 		imageUrl: musicalNotesTraining,
-		githubUrl: "https://github.com/alexiosiko/musicalnotestraining"
+		githubUrl: "https://github.com/alexiosiko/musicalnotestraining/tree/492baa2252d891be24c4a472bca91bbe75aa9803"
 	},
 	{
 		title: "Mechanic Auto Shop",
