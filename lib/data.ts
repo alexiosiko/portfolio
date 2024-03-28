@@ -73,7 +73,7 @@ export const experiencesData: any = [
 
 export const projectsData = [
 	{
-		title: "Reddit Clone",
+		title: "Reddit Clone (Disabled Stripe and Clerk)",
 		description:
 		"A reddit clone created in React Native. Upload a post or view all posts in home page.",
 		tags: ["React-Native", "Python Backend", "MongoDB"],
