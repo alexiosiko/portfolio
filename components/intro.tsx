@@ -30,7 +30,7 @@ export default function Intro() {
 		<Image src={ProfilePic} alt="profile-pic" height={60} className="m-auto mb-12 rounded-full" />
         <span className="font-bold">Hello, I'm Alexi.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">4+ years</span> of experience.
+        <span className="font-bold">3+ years</span> of experience.
 		I design and code beautifully simple things, and{" "}
         <span className="font-bold">I love what I do</span>.
       </motion.h1>
