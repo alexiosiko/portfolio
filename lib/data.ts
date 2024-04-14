@@ -78,7 +78,7 @@ export const projectsData = [
 		description: "Used native and expo-router to create an interactable puzzle game where you find correct notes that you hear!",
 		tags: ["React-Native", "Expo", "Expo-router", "Expo-Av"],
 		imageUrl: musicalNotesTrainingApp,
-		githubUrl: "https://github.com/alexiosiko/reddit-clone"
+		githubUrl: "https://github.com/alexiosiko/musicalnotestraining-mobile-app"
 	},
 		{
 		title: "Dev Olympus",
@@ -103,7 +103,7 @@ export const projectsData = [
 		"Integrated StripeJs payments and Clerk User Auth to manage users for a subscription based service to a musical notes training web app!",
 		tags: ["Stripe Payments", "Clerk User Auth", "Nextjs"],
 		imageUrl: musicalNotesTraining,
-		githubUrl: "https://github.com/alexiosiko/musicalnotestraining/tree/492baa2252d891be24c4a472bca91bbe75aa9803"
+		githubUrl: "https://github.com/alexiosiko/musicalnotestraining"
 	},
 	{
 		title: "Reddit Clone",
