@@ -139,17 +139,17 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-	"HTML",
-	"CSS",
-	"JavaScript",
-	"TypeScript",
 	"React",
+	"TypeScript",
+	"HTML",
 	"Next",
-	"Node.js",
 	"Tailwind",
+	"CSS",
 	"MongoDB",
-	"Express",
+	"JavaScript",
+	"Node.js",
+	"Framer-Motio",
 	"Python",
-	"Django",
 	"C#",
-] as const;
+	"Framer-Motio",
+];
