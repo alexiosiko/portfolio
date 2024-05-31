@@ -9,7 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import ProfilePic from '@/resources/alexi-profile-photo.jpg';
+import ProfilePic from '@/resources/playing.jpeg';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -27,7 +27,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
 		transition={{ delay: 0.3 }}
       >
-		<Image src={ProfilePic} alt="profile-pic" height={60} className="m-auto mb-12 rounded-full" />
+		<Image src={ProfilePic} alt="profile-pic" height={100} width={100} className="m-auto mb-12 object-cover aspect-square rounded-full " />
         <div className="font-bold text-7xl mb-24">Hi, I'm Alexi</div> 
 		I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
