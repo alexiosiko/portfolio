@@ -67,7 +67,7 @@ export const experiencesData: any = [
 		"Applied theoretical knowledge to real-world projects, emphasizing problem-solving."
 	],
 	icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2023",
+    date: "2021 - 2024",
 	
   }
   
