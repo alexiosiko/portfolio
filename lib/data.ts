@@ -104,14 +104,7 @@ export const projectsData = [
 		githubUrl: "https://github.com/alexiosiko/reddit-clone"
 	},
 	
-	// {
-	// 	title: "Dev Olympus",
-	// 	description:
-	// 	"Nextjs website for a tech-startup designed with figma.",
-	// 	tags: ["Nextjs-13", "forms", "tailwind", "figma"],
-	// 	imageUrl: "/devolympus.png",
-	// 	githubUrl: "https://github.com/alexiosiko/tech-startup"
-	// },
+	
 	
 	{
 		title: "react-timeline-vertical",
@@ -127,6 +120,14 @@ export const projectsData = [
 		tags: ["Unity", "C#", "Netcode Networking"],
 		imageUrl: "/cardGame.png",
 		githubUrl: "https://github.com/alexiosiko/Card-Game-Multiplayer"
+	},
+	{
+		title: "Dev Olympus",
+		description:
+		"Nextjs website for a tech-startup designed with figma.",
+		tags: ["Nextjs-13", "forms", "tailwind", "figma"],
+		imageUrl: "/devolympus.png",
+		githubUrl: "https://github.com/alexiosiko/tech-startup"
 	},
 	{
 		title: "Castle Mystery (NPC Interaction)",
