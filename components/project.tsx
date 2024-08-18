@@ -52,6 +52,8 @@ export default function Project({
         </div>
 
         <Image
+		width={500}
+		height={500}
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
