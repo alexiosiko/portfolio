@@ -103,9 +103,6 @@ export const projectsData = [
 		imageUrl: "/reddit.png",
 		githubUrl: "https://github.com/alexiosiko/reddit-clone"
 	},
-	
-	
-	
 	{
 		title: "react-timeline-vertical",
 		description: "A fully customizeable open-source node package",
@@ -122,12 +119,20 @@ export const projectsData = [
 		githubUrl: "https://github.com/alexiosiko/Card-Game-Multiplayer"
 	},
 	{
-		title: "Dev Olympus",
+		title: "Poly Tech Development",
 		description:
-		"Nextjs website for a tech-startup designed with figma.",
+		"Nextjs website for my tech-startup designed with figma.",
 		tags: ["Nextjs-13", "forms", "tailwind", "figma"],
 		imageUrl: "/devolympus.png",
 		githubUrl: "https://github.com/alexiosiko/tech-startup"
+	},
+	{
+		title: "2D Puzzle Game",
+		description:
+		"Clear blocks decrese the water level. Clicks will cost you however...",
+		tags: ["Unity", "Sprites", "Animations", "Audio Player"],
+		imageUrl: "/bilge.png",
+		githubUrl: "https://github.com/alexiosiko/Bilge"
 	},
 	{
 		title: "Castle Mystery (NPC Interaction)",

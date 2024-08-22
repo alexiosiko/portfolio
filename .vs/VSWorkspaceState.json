@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\components"
+    "\\components",
+    "\\lib"
   ],
-  "SelectedNode": "\\components\\experience.js",
+  "SelectedNode": "\\lib\\data.ts",
   "PreviewInSolutionExplorer": false
 }
