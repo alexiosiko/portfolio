@@ -73,27 +73,13 @@ export const projectsData = [
 		imageUrl: "/musictosheet.png	",
 		githubUrl: "https://github.com/alexiosiko/music-ai"
 	},
-	{
-		title: "Fitness Tracking Mobile App",
-		description: "Track your daily calories intake, and daily exercises to visualize your diet every day",
-		tags: ["React-Native", "Expo", "Mongodb", "Clerk-Auth", "REST Api"],
-		imageUrl: "/calories.png",
-		githubUrl: "https://github.com/alexiosiko/fitness-app"
-	},
+	
 	{
 		title: "Musical Notes Training Mobile App",
 		description: "Used react-native and expo-router to create an interactable puzzle game where you find correct notes that you hear!",
 		tags: ["React-Native", "Expo", "Expo-router", "Expo-Av"],
 		imageUrl: "/musicalnotestraining-app.png",
 		githubUrl: "https://github.com/alexiosiko/musicalnotestraining-mobile-app"
-	},
-	{
-		title: "Musical Notes Training Web App",
-		description:
-		"Integrated StripeJs payments and Clerk User Auth to manage users for a subscription based service to a musical notes training web app!",
-		tags: ["Stripe Payments", "Clerk User Auth", "Nextjs"],
-		imageUrl: "/musicalnotestraining.png",
-		githubUrl: "https://github.com/alexiosiko/musicalnotestraining"
 	},
 	{
 		title: "Reddit Clone",
@@ -118,13 +104,15 @@ export const projectsData = [
 		imageUrl: "/cardGame.png",
 		githubUrl: "https://github.com/alexiosiko/Card-Game-Multiplayer"
 	},
+	
+	
+	
 	{
-		title: "Poly Tech Development",
-		description:
-		"Nextjs website for my tech-startup designed with figma.",
-		tags: ["Nextjs-13", "forms", "tailwind", "figma"],
-		imageUrl: "/devolympus.png",
-		githubUrl: "https://github.com/alexiosiko/tech-startup"
+		title: "Fitness Tracking Mobile App",
+		description: "Track your daily calories intake, and daily exercises to visualize your diet every day",
+		tags: ["React-Native", "Expo", "Mongodb", "Clerk-Auth", "REST Api"],
+		imageUrl: "/calories.png",
+		githubUrl: "https://github.com/alexiosiko/fitness-app"
 	},
 	{
 		title: "2D Puzzle Game",
@@ -133,6 +121,14 @@ export const projectsData = [
 		tags: ["Unity", "Sprites", "Animations", "Audio Player"],
 		imageUrl: "/bilge.png",
 		githubUrl: "https://github.com/alexiosiko/Bilge"
+	},
+	{
+		title: "Poly Tech Development",
+		description:
+		"Nextjs website for my tech-startup designed with figma.",
+		tags: ["Nextjs-13", "forms", "tailwind", "figma"],
+		imageUrl: "/devolympus.png",
+		githubUrl: "https://github.com/alexiosiko/tech-startup"
 	},
 	{
 		title: "Castle Mystery (NPC Interaction)",
