@@ -75,7 +75,7 @@ export const projectsData = [
 	},
 	
 	{
-		title: "Musical Notes Training Mobile App",
+		title: "Piano Game",
 		description: "Used react-native and expo-router to create an interactable puzzle game where you find correct notes that you hear!",
 		tags: ["React-Native", "Expo", "Expo-router", "Expo-Av"],
 		imageUrl: "/musicalnotestraining-app.png",
