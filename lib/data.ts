@@ -70,7 +70,7 @@ export const projectsData = [
 		title: "AI Musical Transcription (Current Project)",
 		description: "An AI-Model prediction that converts audio files to sheet music",
 		tags: ["Flask", "Nextjs", "Clerk-Auth", "REST Api"],
-		imageUrl: "/musictosheet.png	",
+		imageUrl: "/musictosheet.png",
 		githubUrl: "https://github.com/alexiosiko/music-ai"
 	},
 	
@@ -127,7 +127,7 @@ export const projectsData = [
 		description:
 		"Nextjs website for my tech-startup designed with figma.",
 		tags: ["Nextjs-13", "forms", "tailwind", "figma"],
-		imageUrl: "/devolympus.png",
+		imageUrl: "/polytech.png",
 		githubUrl: "https://github.com/alexiosiko/tech-startup"
 	},
 	{
