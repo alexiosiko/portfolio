@@ -43,8 +43,8 @@ export default function RootLayout({
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
-      </body>
 	  <Analytics />
+      </body>
     </html>
   );
 }
