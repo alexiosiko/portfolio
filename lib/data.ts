@@ -67,7 +67,7 @@ export const experiencesData: any = [
 
 export const projectsData = [
 	{
-		title: "AI Musical Transcription (Current Project)",
+		title: "AI Musical Transcription",
 		description: "An AI-Model prediction that converts audio files to sheet music",
 		tags: ["Flask", "Nextjs", "Clerk-Auth", "REST Api"],
 		imageUrl: "/musictosheet.png",
@@ -81,21 +81,7 @@ export const projectsData = [
 		imageUrl: "/musicalnotestraining-app.png",
 		githubUrl: "https://github.com/alexiosiko/musicalnotestraining-mobile-app"
 	},
-	{
-		title: "Reddit Clone",
-		description:
-		"A reddit clone created in React Native. Upload a post or view all posts in home page.",
-		tags: ["React-Native", "Python Backend", "MongoDB"],
-		imageUrl: "/reddit.png",
-		githubUrl: "https://github.com/alexiosiko/reddit-clone"
-	},
-	{
-		title: "react-timeline-vertical",
-		description: "A fully customizeable open-source node package",
-		tags: ["node", "vite", "tailwindcss"],
-		imageUrl: "/react-timeline-vertical.png",
-		githubUrl: "https://github.com/alexiosiko/react-timeline-vertical",
-	},
+
 	{
 		title: "Card Game (Steam Multiplayer)",
 		description:
@@ -104,7 +90,41 @@ export const projectsData = [
 		imageUrl: "/cardGame.png",
 		githubUrl: "https://github.com/alexiosiko/Card-Game-Multiplayer"
 	},
+
 	
+	{
+		title: "One Note Clone",
+		description:
+		"Developed a OneNote Clone using Next.js, Clerk, and MongoDB with PWA capabilities for offline and cross-device access.",
+		tags: ["Nextjs", "Clerk", "Mongodb", "PWA"],
+		imageUrl: "/onenotee.png",
+		githubUrl: "https://github.com/alexiosiko/onenote"
+	},
+	
+	{
+		title: "2D Puzzle Game",
+		description:
+		"Clear blocks decrese the water level. Clicks will cost you however...",
+		tags: ["Unity", "Sprites", "Animations", "Audio Player"],
+		imageUrl: "/bilge.png",
+		githubUrl: "https://github.com/alexiosiko/Bilge"
+	},
+	{
+		title: "react-timeline-vertical",
+		description: "A fully customizeable open-source node package",
+		tags: ["node", "vite", "tailwindcss"],
+		imageUrl: "/react-timeline-vertical.png",
+		githubUrl: "https://github.com/alexiosiko/react-timeline-vertical",
+	},
+	
+	{
+		title: "Castle Mystery (NPC Interaction)",
+		description:
+		"An interactive first person shooter. Talk to people, pick up and use objects to unlock interactables and open new paths.",
+		tags: ["Unity", "NPC Behaviours", "Inventory Management", "Props and Interactables"],
+		imageUrl: "/castle.png",
+		githubUrl: "https://github.com/alexiosiko/Castle-Npcs"
+	},
 	
 	
 	{
@@ -115,28 +135,12 @@ export const projectsData = [
 		githubUrl: "https://github.com/alexiosiko/fitness-app"
 	},
 	{
-		title: "2D Puzzle Game",
-		description:
-		"Clear blocks decrese the water level. Clicks will cost you however...",
-		tags: ["Unity", "Sprites", "Animations", "Audio Player"],
-		imageUrl: "/bilge.png",
-		githubUrl: "https://github.com/alexiosiko/Bilge"
-	},
-	{
 		title: "Poly Tech Development",
 		description:
 		"Nextjs website for my tech-startup designed with figma.",
 		tags: ["Nextjs-13", "forms", "tailwind", "figma"],
 		imageUrl: "/polytech.png",
 		githubUrl: "https://github.com/alexiosiko/tech-startup"
-	},
-	{
-		title: "Castle Mystery (NPC Interaction)",
-		description:
-		"An interactive first person shooter. Talk to people, pick up and use objects to unlock interactables and open new paths.",
-		tags: ["Unity", "NPC Behaviours", "Inventory Management", "Props and Interactables"],
-		imageUrl: "/castle.png",
-		githubUrl: "https://github.com/alexiosiko/Castle-Npcs"
 	},
 	{
 		title: "Mechanic Auto Shop",

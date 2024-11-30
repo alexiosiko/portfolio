@@ -6,10 +6,14 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Analytics } from "@vercel/analytics/react"
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
+	icons: {
+		icon: "/favicon.png"
+    },
   title: "Alexi | Personal Portfolio",
   description: "Alexi is a full-stack developer with 2 years of experience.",
 };

@@ -19,10 +19,10 @@ export default function About() {
     >
 		<p className="mb-6">
 			I've started off programming in Unity with <span className="font-bold">game development</span>, where I worked with both 2D and 3D enviroments.
-			I quickly got addicted to seeing what <span className="font-bold">amazing</span> things I can do with a <span className="font-bold">little</span> amount of code<span className="font-bold"></span>; <br /><span className="font-bold"> I haven't stopped since </span>.. 
+			I quickly got addicted to seeing what <span className="font-bold">amazing</span> things I can do with a <span className="font-bold">little</span> amount of code. I haven't stopped since ... 
 		</p>
 		<p className="mb-6">
-			Programming is puzzles to me, and I <span className="font-bold">love</span> solving puzzles.
+			Programming is puzzles to me, and I love to solve puzzle.
 			Ever since I've learned such advanced topics,
 			the doors really open and technology goes from once being <span className="font-bold">"that magic that the computer creates"</span> to <span className="font-bold">"the magic that I create"</span>.  
 		</p>
