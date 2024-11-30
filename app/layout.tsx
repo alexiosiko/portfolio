@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
@@ -8,7 +8,10 @@ import ThemeContextProvider from "@/context/theme-context";
 import { Analytics } from "@vercel/analytics/react"
 import { Metadata } from "next";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({
+	subsets: ["latin"],
+	weight: '600',
+});
 
 export const metadata: Metadata = {
 	icons: {
