@@ -30,7 +30,7 @@ export default function Intro() {
 		<Image src="/playing.jpeg" alt="profile-pic" height={100} width={100} className="m-auto mb-12 object-cover aspect-square rounded-full " />
         <div className="font-bold text-7xl mb-24">Hi, I'm Alexi</div> 
 		I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
+        <span className="font-bold">developer</span> with{" "}
         <span className="font-bold">3+ years</span> of experience.
 		I design and code beautifully simple things, and{" "}
         <span className="font-bold">I love what I do</span>.
