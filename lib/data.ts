@@ -74,13 +74,7 @@ export const projectsData = [
 		imageUrl: "/pixel-dungeons.png",
 		githubUrl: "https://store.steampowered.com/app/3896240/Pixel_Dungeons/"
 	},
-	{
-		title: "AI Musical Transcription",
-		description: "An AI-Model prediction that converts audio files to sheet music",
-		tags: ["Flask", "Nextjs", "Clerk-Auth", "REST Api"],
-		imageUrl: "/musictosheet.png",
-		githubUrl: "https://github.com/alexiosiko/music-ai"
-	},
+	
 	
 	{
 		title: "Piano Game",
@@ -98,7 +92,13 @@ export const projectsData = [
 		imageUrl: "/cardGame.png",
 		githubUrl: "https://github.com/alexiosiko/Card-Game-Multiplayer"
 	},
-
+	{
+		title: "AI Musical Transcription",
+		description: "An AI-Model prediction that converts audio files to sheet music",
+		tags: ["Flask", "Nextjs", "Clerk-Auth", "REST Api"],
+		imageUrl: "/musictosheet.png",
+		githubUrl: "https://github.com/alexiosiko/music-ai"
+	},
 	
 	// {
 	// 	title: "One Note Clone",
