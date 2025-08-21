@@ -30,6 +30,7 @@ export const links = [
   ] as const;
 
 export const experiencesData: any = [
+	
   {
     title: "Completed Course: React – The Complete Guide 2023 on Udemy",
     description: [
@@ -67,6 +68,13 @@ export const experiencesData: any = [
 
 export const projectsData = [
 	{
+		title: "Pixel Dungeons",
+		description: "2D Turn-based puzzle game",
+		tags: ["Unity", "Aseprite", "A* Pathfinding", "UI", "Sound Effects"],
+		imageUrl: "/pixel-dungeons.png",
+		githubUrl: "https://store.steampowered.com/app/3896240/Pixel_Dungeons/"
+	},
+	{
 		title: "AI Musical Transcription",
 		description: "An AI-Model prediction that converts audio files to sheet music",
 		tags: ["Flask", "Nextjs", "Clerk-Auth", "REST Api"],
@@ -92,14 +100,14 @@ export const projectsData = [
 	},
 
 	
-	{
-		title: "One Note Clone",
-		description:
-		"Developed a OneNote Clone using Next.js, Clerk, and MongoDB with PWA capabilities for offline and cross-device access.",
-		tags: ["Nextjs", "Clerk", "Mongodb", "PWA"],
-		imageUrl: "/onenotee.png",
-		githubUrl: "https://github.com/alexiosiko/onenote"
-	},
+	// {
+	// 	title: "One Note Clone",
+	// 	description:
+	// 	"Developed a OneNote Clone using Next.js, Clerk, and MongoDB with PWA capabilities for offline and cross-device access.",
+	// 	tags: ["Nextjs", "Clerk", "Mongodb", "PWA"],
+	// 	imageUrl: "/onenotee.png",
+	// 	githubUrl: "https://github.com/alexiosiko/onenote"
+	// },
 	
 	{
 		title: "2D Puzzle Game",
@@ -133,14 +141,6 @@ export const projectsData = [
 		tags: ["React-Native", "Expo", "Mongodb", "Clerk-Auth", "REST Api"],
 		imageUrl: "/calories.png",
 		githubUrl: "https://github.com/alexiosiko/fitness-app"
-	},
-	{
-		title: "Poly Tech Development",
-		description:
-		"Nextjs website for my tech-startup designed with figma.",
-		tags: ["Nextjs-13", "forms", "tailwind", "figma"],
-		imageUrl: "/polytech.png",
-		githubUrl: "https://github.com/alexiosiko/tech-startup"
 	},
 	{
 		title: "Mechanic Auto Shop",
