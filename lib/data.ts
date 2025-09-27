@@ -72,7 +72,7 @@ export const projectsData = [
 		description: "2D Turn-based puzzle game",
 		tags: ["Unity", "Aseprite", "A* Pathfinding", "UI", "Sound Effects"],
 		imageUrl: "/pixel-dungeons.png",
-		githubUrl: "https://store.steampowered.com/app/3896240/Pixel_Dungeons/"
+		githubUrl: "https://store.steampowered.com/app/3896240/You_Move_I_Move/"
 	},
 	
 	
