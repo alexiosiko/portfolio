@@ -1,6 +1,8 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
+import { FaGamepad, FaChalkboardTeacher } from "react-icons/fa";
+
 
 export const links = [
 	{
@@ -30,7 +32,29 @@ export const links = [
   ] as const;
 
 export const experiencesData: any = [
-	
+{
+  title: "Game Developer",
+  location: "BirdBoxGames",
+  description: [
+    "Working on game development projects using modern engines and tools.",
+    "Collaborating with designers and developers to build engaging gameplay experiences.",
+    "Contributing to debugging, feature implementation, and performance optimization."
+  ],
+  icon: React.createElement(FaGamepad), // 🎮 game controller icon
+  date: "2025 - Present",
+},
+{
+  title: "Computer Science Tutor",
+  location: "Academic Support",
+  description: [
+    "Tutored students in core computer science concepts including programming and problem-solving.",
+    "Helped students understand data structures, algorithms, and basic software design.",
+    "Provided one-on-one support to improve academic performance and confidence."
+  ],
+  icon: React.createElement(FaChalkboardTeacher), // 👨‍🏫 teaching icon
+  date: "2023",
+},
+
   {
     title: "Completed Course: React – The Complete Guide 2023 on Udemy",
     description: [
@@ -45,7 +69,7 @@ export const experiencesData: any = [
     title: "Completed Course: Complete C# Unity Game Developer 2D",
     description: [
 		"Used math and vectors for realistic game movements and interactions in unity",
-		"Designed user-friendly interfaces to provide simple easy and seamless functionality",
+		"Designed user-friendly interfaces to provide simple easy functionality",
 		"Applied object-oriented programming practices to build scalable game design"
 	],
 	icon: React.createElement(CgWorkAlt),
