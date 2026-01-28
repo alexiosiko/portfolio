@@ -3,7 +3,7 @@ import { Project, Experience, Education, SkillCategory, Certification, Volunteer
 export const PERSONAL_INFO = {
   name: "Alexi Ikonomou",
   role: "Software Dev | Game Dev | Teacher",
-  email: "alexiosiko@gmail.com",
+  email: "alexiosiko@hotmail.com",
   location: "Vancouver, British Columbia, Canada",
   bio: [
     "I am a software developer with a background in teaching and customer service. I love simplifying complex concepts and building impactful, user-centric solutions.",

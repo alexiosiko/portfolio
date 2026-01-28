@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 300, damping: 20, mass: 0.8 }}
-      className={`fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm border-b ${scrolled ? 'py-2 border-gray-200 shadow-sm' : 'py-4 border-transparent'}`}
+      className={`fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm border-b ${scrolled ? 'py-2 border-slate-200 shadow-sm' : 'py-4 border-transparent'}`}
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between">
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
             <motion.span 
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="font-display font-medium text-xl text-theme-subtext tracking-tight hover:text-theme-primary transition-colors block"
+              className="font-display font-semibold text-xl text-slate-500 tracking-tight hover:text-theme-primary transition-colors block"
             >
               Alexi<span className="font-bold text-theme-text">Ikonomou</span>
             </motion.span>
@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  className="text-theme-subtext hover:text-theme-text hover:bg-theme-surface px-4 py-2 rounded-full text-sm font-medium transition-colors font-display"
+                  className="text-slate-600 hover:text-theme-primary hover:bg-slate-50 px-4 py-2 rounded-lg text-sm font-medium transition-colors font-display"
                 >
                   {link.name}
                 </motion.a>
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="ml-4 px-6 py-2 rounded-full bg-theme-primary text-white hover:bg-indigo-700 transition-colors text-sm font-medium shadow-sm hover:shadow-md"
+                className="ml-4 px-6 py-2 rounded-lg bg-theme-primary text-white hover:bg-blue-700 transition-all text-sm font-medium shadow-sm hover:shadow-md"
               >
                 Contact
               </motion.a>
@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
               whileTap={{ scale: 0.9 }}
-              className="inline-flex items-center justify-center p-2 rounded-full text-theme-subtext hover:bg-theme-surface focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-slate-700 hover:bg-slate-50 focus:outline-none"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </motion.button>
@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ type: "spring", stiffness: 400, damping: 30 }}
-            className="md:hidden absolute top-full left-0 w-full px-0 mt-0 overflow-hidden bg-white border-b border-gray-100 shadow-xl"
+            className="md:hidden absolute top-full left-0 w-full px-0 mt-0 overflow-hidden bg-white border-b border-slate-200 shadow-xl"
           >
             <div className="px-4 py-4 space-y-1">
               {navLinks.map((link) => (
@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   whileTap={{ scale: 0.95 }}
-                  className="text-theme-subtext hover:text-theme-primary hover:bg-theme-surface block px-4 py-3 rounded-full text-base font-medium font-display"
+                  className="text-slate-600 hover:text-theme-primary hover:bg-slate-50 block px-4 py-3 rounded-lg text-base font-medium font-display"
                 >
                   {link.name}
                 </motion.a>
@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
                   href="#contact"
                   onClick={() => setIsOpen(false)}
                   whileTap={{ scale: 0.95 }}
-                  className="text-white bg-theme-primary font-medium block px-4 py-3 rounded-full text-base mt-4 text-center"
+                  className="text-white bg-theme-primary font-medium block px-4 py-3 rounded-lg text-base mt-4 text-center"
                 >
                   Contact Me
                 </motion.a>
