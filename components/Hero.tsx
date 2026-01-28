@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 400, damping: 20 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start"
             >
               <a href="#projects">
                 <Button variant="primary" className="h-14 px-8 text-lg bg-theme-primary hover:bg-blue-700 shadow-lg shadow-blue-500/20 border-none">
