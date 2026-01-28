@@ -1,36 +1,103 @@
-"use client";
+import React from 'react';
+import { PERSONAL_INFO } from '../constants';
+import { Gamepad2, Code, Users } from 'lucide-react';
+import { motion } from 'framer-motion';
 
-import React from "react";
-import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
-
-export default function About() {
-  const { ref } = useSectionInView("About");
-
+const About: React.FC = () => {
   return (
-    <motion.section
-      ref={ref}
-      className="mb-28 max-w-[45rem] text-center text-lg leading-8 sm:mb-40 scroll-mt-28"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
-      id="about"
-    >
-		<p className="mb-6">
-			I've started off programming in Unity with <span className="font-bold">game development</span>, where I worked with both 2D and 3D enviroments.
-			I quickly got addicted to seeing what <span className="font-bold">amazing</span> things I can do with a <span className="font-bold">little</span> amount of code. I haven't stopped since ... 
-		</p>
-		<p className="mb-6">
-			Programming is puzzles to me, and I love to solve puzzle.
-			Ever since I've learned such advanced topics,
-			the doors really open and technology goes from once being <span className="font-bold">"that magic that the computer creates"</span> to <span className="font-bold">"the magic that I create"</span>.  
-		</p>
-			
-		<p>
-			My <span className="font-bold">dream</span> is to become a <span className="font-bold">professional software developer</span> and to be working
-			with <span className="font-bold">successful people</span> that <span className="font-bold">I am proud to work with</span>.
-		</p>
-	</motion.section>
+    <section id="about" className="py-24 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Main Content - Centered */}
+        <div className="max-w-4xl mx-auto mb-16 text-center">
+          
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ type: "spring", stiffness: 200, damping: 20 }}
+          >
+            <div className="inline-flex items-center gap-3 mb-6 px-4 py-1.5 rounded-full bg-white/50 backdrop-blur-md border border-theme-primary/10 shadow-sm">
+                <span className="text-theme-primary font-bold tracking-wider text-sm uppercase">About Me</span>
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl font-display font-medium text-theme-text mb-8 leading-tight">
+              Passionate about <span className="text-theme-primary">Code</span> & <span className="text-theme-secondary">Creativity</span>.
+            </h2>
+            
+            <div className="space-y-4 text-theme-subtext text-lg leading-relaxed max-w-3xl mx-auto">
+              {PERSONAL_INFO.bio.map((paragraph, index) => (
+                <motion.p 
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, type: "spring", stiffness: 200, damping: 20 }}
+                >
+                  {paragraph}
+                </motion.p>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Highlights Row */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div 
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.05, y: -5 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                className="bg-white/60 backdrop-blur-sm p-8 rounded-[24px] shadow-sm hover:bg-white hover:shadow-card-hover group text-center md:text-left border border-white/50"
+            >
+                <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-theme-primary mb-6 group-hover:scale-110 transition-transform duration-300 mx-auto md:mx-0">
+                    <Gamepad2 size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-theme-text mb-3 font-display">Game Development</h3>
+                <p className="text-theme-subtext leading-relaxed">
+                    Specializing in Godot & Unity to craft immersive mechanics.
+                </p>
+            </motion.div>
+
+            <motion.div 
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.05, y: -5 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ type: "spring", stiffness: 300, damping: 15, delay: 0.1 }}
+                className="bg-white/60 backdrop-blur-sm p-8 rounded-[24px] shadow-sm hover:bg-white hover:shadow-card-hover group text-center md:text-left border border-white/50"
+            >
+                <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-theme-secondary mb-6 group-hover:scale-110 transition-transform duration-300 mx-auto md:mx-0">
+                    <Code size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-theme-text mb-3 font-display">Full Stack Web</h3>
+                <p className="text-theme-subtext leading-relaxed">
+                    Building scalable apps with React, Next.js, and Node.
+                </p>
+            </motion.div>
+
+            <motion.div 
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.05, y: -5 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ type: "spring", stiffness: 300, damping: 15, delay: 0.2 }}
+                className="bg-white/60 backdrop-blur-sm p-8 rounded-[24px] shadow-sm hover:bg-white hover:shadow-card-hover group text-center md:text-left border border-white/50"
+            >
+                <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-theme-accent mb-6 group-hover:scale-110 transition-transform duration-300 mx-auto md:mx-0">
+                    <Users size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-theme-text mb-3 font-display">Mentorship</h3>
+                <p className="text-theme-subtext leading-relaxed">
+                    Translating complex technical concepts into actionable knowledge.
+                </p>
+            </motion.div>
+        </div>
+
+      </div>
+    </section>
   );
-}
+};
+
+export default About;
