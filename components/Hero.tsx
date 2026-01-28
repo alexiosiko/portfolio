@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
             <motion.div 
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              transition={{ type: "spring", stiffness: 400, damping: 20 }}
               className="inline-block mb-6 px-4 py-1.5 rounded-full bg-theme-primary/10 border border-theme-primary/20"
             >
               <span className="text-theme-primary font-bold tracking-wide text-sm uppercase">
@@ -34,9 +34,9 @@ const Hero: React.FC = () => {
                   animate={{ opacity: 1, y: 0, rotateX: 0 }}
                   transition={{ 
                     type: "spring", 
-                    stiffness: 200,
-                    damping: 10,
-                    delay: i * 0.15
+                    stiffness: 300,
+                    damping: 15,
+                    delay: i * 0.1
                   }}
                   className={`inline-block mr-4 ${
                     i === 0 ? 'text-theme-text' : 
@@ -52,16 +52,16 @@ const Hero: React.FC = () => {
             <motion.p 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.5, type: "spring", stiffness: 200, damping: 20 }}
+              transition={{ delay: 0.4, type: "spring", stiffness: 400, damping: 20 }}
               className="text-xl md:text-2xl text-theme-subtext mb-10 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed"
             >
-               I'm <span className="font-semibold text-theme-text">Alexi</span>. I build robust and scalable software.
+               I'm <span className="font-semibold text-theme-text">Alexi</span>. I create things, and I love it.
             </motion.p>
             
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, type: "spring", stiffness: 300, damping: 20 }}
+              transition={{ delay: 0.5, type: "spring", stiffness: 400, damping: 20 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <a href="#projects">
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
           <motion.div 
             initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ type: "spring", stiffness: 200, damping: 15 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className="flex-1 flex justify-center lg:justify-end relative"
           >
             <motion.div 
@@ -110,7 +110,7 @@ const Hero: React.FC = () => {
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 whileHover={{ scale: 1.1, rotate: 2 }}
-                transition={{ type: "spring", stiffness: 300, damping: 15, delay: 0.8 }}
+                transition={{ type: "spring", stiffness: 400, damping: 20, delay: 0.6 }}
                 className="absolute bottom-10 -left-6 bg-white/90 backdrop-blur px-6 py-4 rounded-xl shadow-xl border border-slate-200 hidden md:block cursor-default"
                >
                  <div className="flex items-center gap-3">

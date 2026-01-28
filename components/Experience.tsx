@@ -12,41 +12,45 @@ const TimelineItem: React.FC<{
   align?: 'left' | 'right' 
 }> = ({ data, index, icon: Icon, color, borderColor, align }) => {
   const isEven = index % 2 === 0;
-  // On desktop: if align is forced, use it. Otherwise alternate.
   const isLeft = align ? align === 'left' : isEven;
 
   return (
-    <div className={`relative flex items-center justify-between md:justify-center md:gap-16 mb-12 w-full ${isLeft ? 'flex-row-reverse' : ''}`}>
+    <div className={`relative flex items-center justify-between md:justify-center md:gap-16 mb-12 w-full ${isLeft ? 'md:flex-row-reverse' : ''}`}>
       
-      {/* Center Line & Node (Desktop) */}
+      {/* Center Icon Node */}
+      {/* Position: Mobile at -left-8 (relative to pl-16 content), Desktop at left-1/2 */}
       <motion.div 
-        initial={{ scale: 0 }}
-        whileInView={{ scale: 1 }}
-        transition={{ type: "spring", stiffness: 300, damping: 15, delay: 0.2 }}
-        className={`hidden md:flex absolute left-1/2 -translate-x-1/2 items-center justify-center w-12 h-12 rounded-full bg-white border-4 ${borderColor.replace('bg-', 'border-').replace('/10', '/30')} shadow-sm z-10`}
+        initial={{ scale: 0, x: "-50%", y: "-50%" }}
+        whileInView={{ scale: 1, x: "-50%", y: "-50%" }}
+        viewport={{ once: true }}
+        transition={{ type: "spring", stiffness: 500, damping: 20, delay: 0.1 }}
+        className={`flex absolute -left-8 md:left-1/2 top-1/2 items-center justify-center w-12 h-12 rounded-full bg-white border-4 ${borderColor.replace('bg-', 'border-').replace('/10', '/30')} shadow-sm z-10`}
       >
          <Icon size={20} className={color} />
       </motion.div>
 
-      {/* Spacer for the other side */}
+      {/* Spacer for the other side (Desktop only) */}
       <div className="hidden md:block w-[40%]" />
 
-      {/* Content Card */}
+      {/* Content Card Wrapper - Entrance Animation */}
       <motion.div 
-        initial={{ opacity: 0, x: isLeft ? -50 : 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ type: "spring", stiffness: 200, damping: 15, delay: index * 0.1 }}
-        whileHover={{ scale: 1.02, transition: { type: "spring", stiffness: 300, damping: 10 }}}
-        className="w-full md:w-[40%] relative group"
+        initial={{ x: isLeft ? -50 : 50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true, margin: "-10%" }}
+        transition={{ type: "spring", stiffness: 400, damping: 20 }}
+        className="w-full md:w-[40%] relative"
       >
         {/* Connector Line (Desktop) */}
         <div 
-            className={`hidden md:block absolute top-8 ${isLeft ? '-right-8' : '-left-8'} w-8 border-t-2 border-dashed border-slate-300 group-hover:border-theme-primary transition-colors duration-300`} 
+            className={`hidden md:block absolute top-1/2 -translate-y-1/2 ${isLeft ? '-right-8' : '-left-8'} w-8 border-t-2 border-dashed border-slate-300 transition-colors duration-300`} 
         />
 
-        <div className={`bg-white/90 p-6 rounded-[16px] shadow-sm hover:shadow-lg transition-shadow duration-300 relative overflow-hidden border border-slate-200 border-l-4 ${borderColor}`}>
-           
+        {/* Card Content - Hover Animation Separated */}
+        <motion.div 
+           whileHover={{ scale: 1.02 }}
+           transition={{ type: "spring", stiffness: 400, damping: 15 }}
+           className="bg-white/90 p-6 rounded-[16px] shadow-sm hover:shadow-lg transition-shadow duration-300 relative overflow-hidden border border-slate-200"
+        >
            <div className="flex flex-col mb-4">
               <h3 className="text-lg font-bold text-theme-text font-display">{data.role}</h3>
               <div className="text-base text-theme-subtext font-medium flex items-center justify-between mt-1">
@@ -70,7 +74,7 @@ const TimelineItem: React.FC<{
                </li>
              ))}
            </ul>
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );
@@ -84,10 +88,10 @@ const Experience: React.FC = () => {
         {/* WORK EXPERIENCE TIMELINE */}
         <div className="mb-20 relative">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ type: "spring", stiffness: 200, damping: 20 }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", stiffness: 400, damping: 20 }}
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-display font-bold text-theme-text inline-flex items-center gap-3">
@@ -99,7 +103,8 @@ const Experience: React.FC = () => {
           </motion.div>
 
           {/* Vertical Central Line */}
-          <div className="absolute left-8 md:left-1/2 top-28 bottom-0 w-0.5 bg-slate-200 md:-translate-x-1/2 h-full" />
+          {/* Position: Mobile left-8, Desktop left-1/2. Always centered via translate-x-1/2 */}
+          <div className="absolute left-8 md:left-1/2 top-32 bottom-8 w-0.5 bg-slate-200 -translate-x-1/2 rounded-full" />
 
           <div className="relative pl-16 md:pl-0">
             {EXPERIENCE.map((job, index) => (
@@ -118,10 +123,10 @@ const Experience: React.FC = () => {
         {/* VOLUNTEERING TIMELINE */}
         <div className="mb-20 relative">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ type: "spring", stiffness: 200, damping: 20 }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", stiffness: 400, damping: 20 }}
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-display font-bold text-theme-text inline-flex items-center gap-3">
@@ -133,7 +138,7 @@ const Experience: React.FC = () => {
           </motion.div>
 
           {/* Vertical Central Line */}
-          <div className="absolute left-8 md:left-1/2 top-28 bottom-0 w-0.5 bg-slate-200 md:-translate-x-1/2 h-full" />
+          <div className="absolute left-8 md:left-1/2 top-32 bottom-8 w-0.5 bg-slate-200 -translate-x-1/2 rounded-full" />
 
           <div className="relative pl-16 md:pl-0">
              {VOLUNTEERING.map((vol, index) => (
@@ -153,21 +158,27 @@ const Experience: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 items-start">
             
             {/* Education */}
-            <motion.div 
-                className="flex flex-col h-full"
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ type: "spring", stiffness: 150, damping: 15 }}
-            >
-                 <div className="flex items-center gap-4 mb-8">
+            <div className="flex flex-col h-full">
+                 <motion.div 
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                    className="flex items-center gap-4 mb-8"
+                 >
                     <div className="p-3 bg-slate-100 rounded-lg">
                         <GraduationCap className="text-slate-800" size={28} />
                     </div>
                     <h2 className="text-3xl font-display font-bold text-theme-text">Education</h2>
-                </div>
+                </motion.div>
                 
-                <div className="bg-white p-8 rounded-[20px] shadow-sm border border-slate-200 h-full">
+                <motion.div 
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ type: "spring", stiffness: 400, damping: 20, delay: 0.1 }}
+                    className="bg-white p-8 rounded-[20px] shadow-sm border border-slate-200 h-full"
+                >
                     <div className="relative border-l-2 border-dashed border-slate-300 ml-3 space-y-12 py-2">
                       {EDUCATION.map((edu, idx) => (
                         <div key={idx} className="pl-8 relative">
@@ -194,25 +205,31 @@ const Experience: React.FC = () => {
                         </div>
                       ))}
                     </div>
-                </div>
-            </motion.div>
+                </motion.div>
+            </div>
 
             {/* Certifications */}
-            <motion.div 
-                className="flex flex-col h-full"
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ type: "spring", stiffness: 150, damping: 15 }}
-            >
-                <div className="flex items-center gap-4 mb-8">
+            <div className="flex flex-col h-full">
+                <motion.div 
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                    className="flex items-center gap-4 mb-8"
+                >
                     <div className="p-3 bg-slate-100 rounded-lg">
                         <Award className="text-slate-800" size={28} />
                     </div>
                     <h2 className="text-3xl font-display font-bold text-theme-text">Certificates</h2>
-                </div>
+                </motion.div>
                 
-                <div className="bg-white p-8 rounded-[20px] shadow-sm border border-slate-200 h-full">
+                <motion.div 
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ type: "spring", stiffness: 400, damping: 20, delay: 0.1 }}
+                    className="bg-white p-8 rounded-[20px] shadow-sm border border-slate-200 h-full"
+                >
                     <div className="grid grid-cols-1 gap-4">
                         {CERTIFICATIONS.map((cert, idx) => (
                             <motion.div 
@@ -231,8 +248,8 @@ const Experience: React.FC = () => {
                             </motion.div>
                         ))}
                     </div>
-                </div>
-            </motion.div>
+                </motion.div>
+            </div>
         </div>
 
         {/* Notable Awards */}
@@ -252,7 +269,7 @@ const Experience: React.FC = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         whileHover={{ scale: 1.02 }}
                         viewport={{ once: true }}
-                        transition={{ type: "spring", stiffness: 300, damping: 15, delay: index * 0.1 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 20, delay: index * 0.1 }}
                         className="bg-white p-6 rounded-[16px] shadow-sm border border-slate-200 flex items-start gap-4 relative overflow-hidden group hover:border-blue-300"
                     >
                          <div className="p-3 bg-slate-50 shadow-inner text-blue-600 rounded-xl z-10 border border-slate-100">

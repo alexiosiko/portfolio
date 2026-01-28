@@ -14,12 +14,12 @@ const Skills: React.FC = () => {
   };
 
   const item: Variants = {
-    hidden: { opacity: 0, y: 20, scale: 0.5 },
+    hidden: { opacity: 0, y: 20, scale: 0.8 },
     show: { 
         opacity: 1, 
         y: 0, 
         scale: 1, 
-        transition: { type: "spring", stiffness: 300, damping: 20 } 
+        transition: { type: "spring", stiffness: 400, damping: 20 } 
     }
   };
 
@@ -46,7 +46,7 @@ const Skills: React.FC = () => {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ type: "spring", stiffness: 200, damping: 20 }}
+            transition={{ type: "spring", stiffness: 400, damping: 20 }}
             className="text-4xl md:text-5xl font-display font-bold text-theme-text mb-4"
           >
             Technical <span className="text-theme-primary">Proficiencies</span>
@@ -71,7 +71,7 @@ const Skills: React.FC = () => {
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
-                  transition={{ delay: idx * 0.1, type: "spring", stiffness: 200, damping: 20 }}
+                  transition={{ delay: idx * 0.1, type: "spring", stiffness: 400, damping: 20 }}
                 >
                   <div className="flex items-center gap-4 mb-6">
                     <h3 className={`text-2xl font-display font-semibold text-theme-text px-2 border-l-4 border-slate-800 pl-4`}>
@@ -98,7 +98,7 @@ const Skills: React.FC = () => {
                                 backgroundColor: '#fff', 
                                 borderColor: skillStyle.hoverBorder,
                                 color: skillStyle.hoverColor,
-                                transition: { type: "spring", stiffness: 400, damping: 10 }
+                                transition: { type: "spring", stiffness: 500, damping: 15 }
                             }}
                             whileTap={{ scale: 0.95 }}
                             className={`px-5 py-2.5 rounded-lg text-sm border cursor-default font-semibold transition-colors ${skillStyle.bg} ${skillStyle.border} ${skillStyle.text}`}

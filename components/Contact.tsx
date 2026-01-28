@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
            initial={{ opacity: 0, scale: 0.9 }}
            whileInView={{ opacity: 1, scale: 1 }}
            viewport={{ once: true, margin: "-50px" }}
-           transition={{ type: "spring", stiffness: 200, damping: 20 }}
+           transition={{ type: "spring", stiffness: 400, damping: 20 }}
         >
           <h2 className="text-5xl md:text-6xl font-display font-bold text-theme-text mb-8">
               Ready to collaborate?
