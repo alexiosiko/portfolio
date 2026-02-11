@@ -5,39 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexi Ikonomou | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
-              display: ['Outfit', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
             },
             colors: {
               theme: {
-                primary: '#2563EB',   /* Blue 600 - Main action, strong & professional */
-                secondary: '#0EA5E9', /* Sky 500 - Tech/Modern accents */
-                accent: '#334155',    /* Slate 700 - Grounded highlights */
-                success: '#10B981',   /* Emerald 500 */
-                blue: '#1D4ED8',      /* Blue 700 */
-                indigo: '#4338CA',    /* Indigo 700 */
-                cyan: '#06B6D4',      /* Cyan 500 */
-                slate: '#64748B',     /* Slate 500 */
-                surface: '#F8FAFC',   /* Slate 50 - Backgrounds */
-                text: '#0F172A',      /* Slate 900 - Main text */
-                subtext: '#475569',   /* Slate 600 - Secondary text */
-                dark: '#020617',      /* Slate 950 */
+                bg: '#fafafa',        /* Off-white background */
+                text: '#111111',      /* Sharp Black */
+                subtext: '#555555',   /* Neutral Gray */
+                accent: '#111111',    /* Black accent */
+                border: '#e5e5e5',    /* Light gray border */
               }
             },
             boxShadow: {
-              'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-              'card-hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-              'material': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+              'hard': '4px 4px 0px 0px rgba(0,0,0,1)',
+              'hard-sm': '2px 2px 0px 0px rgba(0,0,0,1)',
             },
-            borderRadius: {
-              '4xl': '2rem',
-              '5xl': '2.5rem',
+            backgroundImage: {
+              'dot-pattern': "radial-gradient(#d4d4d4 1px, transparent 1px)"
             }
           }
         }
@@ -45,33 +37,29 @@
     </script>
     <style>
       body {
-        background-color: #ffffff;
-        color: #0F172A;
+        background-color: #fafafa;
+        color: #111111;
         overflow-x: hidden;
       }
-      /* Performance optimizations */
-      .backface-hidden {
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-      .will-change-transform {
-        will-change: transform;
-      }
       
-      /* Custom Scrollbar */
+      /* Custom Scrollbar - Minimal */
       ::-webkit-scrollbar {
-        width: 12px;
+        width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #F1F5F9;
+        background: transparent;
       }
       ::-webkit-scrollbar-thumb {
-        background: #94A3B8;
-        border-radius: 6px;
-        border: 3px solid #F1F5F9;
+        background: #ccc;
+        border-radius: 0px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #64748B;
+        background: #000;
+      }
+
+      .bg-grid {
+        background-size: 24px 24px;
+        background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
       }
     </style>
   <script type="importmap">

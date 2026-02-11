@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -16,66 +16,53 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Work', href: '#projects' },
+    { name: 'Toolkit', href: '#skills' },
   ];
 
   return (
-    <motion.nav 
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20, mass: 0.8 }}
-      className={`fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm border-b ${scrolled ? 'py-2 border-slate-200 shadow-sm' : 'py-4 border-transparent'}`}
-    >
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between">
+    <nav className={`sticky top-0 w-full z-50 bg-theme-bg/90 backdrop-blur-md transition-all duration-300 ${scrolled ? 'border-b border-gray-200' : 'border-b border-transparent'}`}>
+      <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
+        <div className="flex items-center justify-between h-20">
           
-          {/* Logo - Theme Style */}
-          <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => window.scrollTo(0,0)}>
-            <motion.span 
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="font-display font-semibold text-xl text-slate-500 tracking-tight hover:text-theme-primary transition-colors block"
-            >
-              Alexi<span className="font-bold text-theme-text">Ikonomou</span>
-            </motion.span>
+          {/* Logo */}
+          <div 
+            className="flex-shrink-0 cursor-pointer" 
+            onClick={() => window.scrollTo(0,0)}
+          >
+            <span className="font-display font-bold text-xl tracking-tight text-black">
+              ALEXI IKONOMOU
+            </span>
           </div>
           
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="hidden md:flex items-center gap-10">
               {navLinks.map((link) => (
-                <motion.a
+                <a
                   key={link.name}
                   href={link.href}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  className="text-slate-600 hover:text-theme-primary hover:bg-slate-50 px-4 py-2 rounded-lg text-sm font-medium transition-colors font-display"
+                  className="text-xs font-mono font-medium text-gray-500 hover:text-black transition-colors uppercase tracking-widest"
                 >
                   {link.name}
-                </motion.a>
+                </a>
               ))}
-              <motion.a 
+              <a 
                 href="#contact" 
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="ml-4 px-6 py-2 rounded-lg bg-theme-primary text-white hover:bg-blue-700 transition-all text-sm font-medium shadow-sm hover:shadow-md"
+                className="ml-4 px-6 py-3 bg-black text-white font-mono text-xs font-bold hover:bg-gray-800 transition-colors uppercase tracking-wide"
               >
                 Contact
-              </motion.a>
+              </a>
           </div>
           
           {/* Mobile Button */}
           <div className="flex md:hidden">
-            <motion.button
+            <button
               onClick={() => setIsOpen(!isOpen)}
-              whileTap={{ scale: 0.9 }}
-              className="inline-flex items-center justify-center p-2 rounded-md text-slate-700 hover:bg-slate-50 focus:outline-none"
+              className="p-2 text-black hover:text-gray-600 transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </motion.button>
+            </button>
           </div>
         </div>
       </div>
@@ -85,36 +72,34 @@ const Navbar: React.FC = () => {
         {isOpen && (
           <motion.div 
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: '100vh' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ type: "spring", stiffness: 400, damping: 30 }}
-            className="md:hidden absolute top-full left-0 w-full px-0 mt-0 overflow-hidden bg-white border-b border-slate-200 shadow-xl"
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="md:hidden fixed inset-0 top-20 bg-theme-bg z-40 flex flex-col p-8"
           >
-            <div className="px-4 py-4 space-y-1">
+            <div className="flex flex-col space-y-6">
               {navLinks.map((link) => (
-                <motion.a
+                <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  whileTap={{ scale: 0.95 }}
-                  className="text-slate-600 hover:text-theme-primary hover:bg-slate-50 block px-4 py-3 rounded-lg text-base font-medium font-display"
+                  className="font-display text-3xl font-medium text-black"
                 >
                   {link.name}
-                </motion.a>
+                </a>
               ))}
-               <motion.a
+               <a
                   href="#contact"
                   onClick={() => setIsOpen(false)}
-                  whileTap={{ scale: 0.95 }}
-                  className="text-white bg-theme-primary font-medium block px-4 py-3 rounded-lg text-base mt-4 text-center"
+                  className="mt-8 py-4 border border-black text-black text-center font-mono font-bold uppercase"
                 >
-                  Contact Me
-                </motion.a>
+                  Get in Touch
+                </a>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </nav>
   );
 };
 

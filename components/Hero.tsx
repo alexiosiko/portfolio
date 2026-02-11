@@ -1,127 +1,92 @@
 import React from 'react';
-import { Download, Code } from 'lucide-react';
+import { ArrowDownRight, Download } from 'lucide-react';
 import Button from './Button';
-import { PERSONAL_INFO } from '../constants';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
-  const titleWords = ["Build.", "Architect.", "Deploy."];
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+      }
+    }
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    show: { 
+      y: 0, 
+      opacity: 1,
+      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }
+    }
+  };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-24 overflow-hidden perspective-1000">
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 relative">
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
+    <section id="home" className="relative min-h-[85vh] flex flex-col justify-center border-b border-black">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full pt-12 pb-24">
+        
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
           
-          {/* Text Content */}
-          <div className="flex-1 text-center lg:text-left">
-            <motion.div 
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 20 }}
-              className="inline-block mb-6 px-4 py-1.5 rounded-full bg-theme-primary/10 border border-theme-primary/20"
-            >
-              <span className="text-theme-primary font-bold tracking-wide text-sm uppercase">
-                Portfolio & Resume
-              </span>
+          {/* Main Typography */}
+          <motion.div 
+            className="lg:col-span-8"
+            variants={container}
+            initial="hidden"
+            animate="show"
+          >
+            <motion.div variants={item}>
+              <h1 className="text-6xl md:text-9xl font-display font-medium tracking-tighter leading-[0.9] mb-10 text-theme-text">
+                SOFTWARE<br/>
+                DEVELOPER<br/>
+                <span className="text-gray-400">& ARTIST</span>
+              </h1>
             </motion.div>
             
-            <h1 className="text-6xl md:text-8xl font-display font-bold text-theme-text tracking-tight mb-8 leading-tight">
-              {titleWords.map((word, i) => (
-                <motion.span
-                  key={i}
-                  initial={{ opacity: 0, y: 50, rotateX: -90 }}
-                  animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                  transition={{ 
-                    type: "spring", 
-                    stiffness: 300,
-                    damping: 15,
-                    delay: i * 0.1
-                  }}
-                  className={`inline-block mr-4 ${
-                    i === 0 ? 'text-theme-text' : 
-                    i === 1 ? 'text-theme-primary' : 
-                    'text-theme-secondary'
-                  }`}
-                >
-                  {word}
-                </motion.span>
-              ))}
-            </h1>
-            
             <motion.p 
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4, type: "spring", stiffness: 400, damping: 20 }}
-              className="text-xl md:text-2xl text-theme-subtext mb-10 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed"
+              variants={item}
+              className="text-xl md:text-2xl font-sans font-light text-theme-subtext max-w-2xl mb-12 leading-relaxed"
             >
-               I'm <span className="font-semibold text-theme-text">Alexi</span>. I create things, and I love it.
+              I create software and games. I love building things that are fun to use and solve real problems.
             </motion.p>
             
             <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, type: "spring", stiffness: 400, damping: 20 }}
-              className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start"
+              variants={item}
+              className="flex flex-wrap gap-4"
             >
               <a href="#projects">
-                <Button variant="primary" className="h-14 px-8 text-lg bg-theme-primary hover:bg-blue-700 shadow-lg shadow-blue-500/20 border-none">
-                  View Projects
+                <Button variant="primary">
+                  View Work
                 </Button>
               </a>
               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" className="h-14 px-8 text-lg border-2 border-slate-300 hover:border-theme-primary text-theme-text hover:bg-slate-50">
-                  <Download size={20} className="mr-2" /> Resume
+                <Button variant="outline">
+                  Download Resume
                 </Button>
               </a>
             </motion.div>
-          </div>
-
-          {/* Image/Visual Content */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
-            animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="flex-1 flex justify-center lg:justify-end relative"
-          >
-            <motion.div 
-              animate={{ y: [-10, 10, -10] }}
-              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              className="relative z-10"
-            >
-              {/* Decorative Rings - Cool tones */}
-              <div className="absolute inset-0 bg-theme-primary/20 rounded-full scale-110 animate-pulse"></div>
-              <div className="absolute inset-0 bg-theme-secondary/20 rounded-full scale-125 -z-10 translate-x-4"></div>
-              <div className="absolute inset-0 bg-theme-slate/20 rounded-full scale-105 -z-20 -translate-y-4"></div>
-              
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-[8px] border-white/90 shadow-2xl ring-4 ring-theme-primary/10">
-                 <img 
-                    src={PERSONAL_INFO.avatar} 
-                    alt="Alexi Ikonomou" 
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=Alexi+Ikonomou&background=2563EB&color=fff&size=512';
-                    }}
-                 />
-              </div>
-
-               {/* Floater Badge */}
-               <motion.div 
-                initial={{ x: -50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                whileHover={{ scale: 1.1, rotate: 2 }}
-                transition={{ type: "spring", stiffness: 400, damping: 20, delay: 0.6 }}
-                className="absolute bottom-10 -left-6 bg-white/90 backdrop-blur px-6 py-4 rounded-xl shadow-xl border border-slate-200 hidden md:block cursor-default"
-               >
-                 <div className="flex items-center gap-3">
-                    <div className="bg-theme-secondary text-white p-2.5 rounded-lg shadow-lg shadow-sky-500/30">
-                        <Code size={20} />
-                    </div>
-                    <span className="font-display font-semibold text-theme-text">Full Stack Developer</span>
-                 </div>
-               </motion.div>
-            </motion.div>
           </motion.div>
+
+          {/* Side Info / Stats */}
+          <motion.div 
+            className="lg:col-span-4 lg:mb-4 lg:text-right flex flex-col items-start lg:items-end gap-10"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
+          >
+             <div className="font-mono text-xs tracking-widest uppercase border-l lg:border-l-0 lg:border-r border-black pl-6 lg:pl-0 lg:pr-6 py-1">
+                <p className="text-gray-500 mb-2">Current Role</p>
+                <p className="font-bold text-black">Developer @ Bird Box Games</p>
+             </div>
+
+             <div className="font-mono text-xs tracking-widest uppercase border-l lg:border-l-0 lg:border-r border-black pl-6 lg:pl-0 lg:pr-6 py-1">
+                <p className="text-gray-500 mb-2">Specialization</p>
+                <p className="font-bold text-black">Full Stack & Game Dev</p>
+             </div>
+          </motion.div>
+
         </div>
       </div>
     </section>

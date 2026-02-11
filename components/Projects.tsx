@@ -1,114 +1,73 @@
 import React from 'react';
 import { PROJECTS } from '../constants';
-import { ExternalLink, Github } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-24 relative z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ type: "spring", stiffness: 400, damping: 20 }}
-          className="mb-12 text-center"
-        >
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-theme-text mb-4">
-             Featured <span className="text-theme-primary">Projects</span>
-          </h2>
-          <p className="text-theme-subtext text-xl max-w-2xl mx-auto">
-            A showcase of games, applications, and technical solutions.
+    <section id="projects" className="py-20 bg-white border-t border-gray-100">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 border-b border-gray-100 pb-4">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-3xl md:text-5xl font-display font-medium tracking-tight"
+          >
+            Selected Work
+          </motion.h2>
+          <p className="font-mono text-xs tracking-widest uppercase mb-1 text-gray-400">
+            Archive [{PROJECTS.length}]
           </p>
-        </motion.div>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
           {PROJECTS.map((project, index) => (
             <motion.div 
               key={project.id}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ 
-                type: "spring",
-                stiffness: 400,
-                damping: 20,
-                delay: index * 0.1 
-              }}
-              className="h-full"
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
+              className="group flex flex-col h-full cursor-pointer"
             >
-              <motion.div
-                whileHover={{ y: -10 }}
-                transition={{ type: "spring", stiffness: 400, damping: 20 }}
-                className="bg-white rounded-[16px] overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl hover:border-theme-primary/30 flex flex-col h-full group transition-colors duration-300"
-              >
-                {/* Image */}
-                <div className="h-52 overflow-hidden bg-slate-100 relative border-b border-slate-100">
-                  <img 
-                    src={project.imageUrl} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    onError={(e) => {
-                       e.currentTarget.src = `https://placehold.co/600x400/F1F5F9/334155?text=${encodeURIComponent(project.title)}`;
-                    }}
-                  />
-                </div>
+              {/* Image Container */}
+              <a href={project.githubUrl} target="_blank" rel="noreferrer" className="block mb-4 overflow-hidden bg-gray-50 relative aspect-video border border-gray-100">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 z-10" />
+                <img 
+                  src={project.imageUrl} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-out transform group-hover:scale-105"
+                  onError={(e) => {
+                      e.currentTarget.src = `https://placehold.co/600x400/eeeeee/111111?text=${encodeURIComponent(project.title)}`;
+                  }}
+                />
+              </a>
 
-                {/* Content */}
-                <div className="p-6 flex flex-col flex-grow relative z-10">
-                  <div className="flex justify-between items-start mb-3">
-                     <h3 className="text-xl font-display font-bold text-theme-text group-hover:text-theme-primary transition-colors">
+              {/* Text Content */}
+              <div className="flex flex-col flex-grow">
+                 <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-base font-display font-bold leading-tight group-hover:underline decoration-1 underline-offset-4">
                       {project.title}
                     </h3>
-                  </div>
-                  
-                  <p className="text-theme-subtext mb-6 line-clamp-3 leading-relaxed text-sm flex-grow">
-                    {project.description}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.tags.slice(0, 4).map((tag, i) => {
-                      // Tech/Manly tag styles
-                      const styles = [
-                          'bg-blue-50 text-blue-700 border-blue-200',
-                          'bg-sky-50 text-sky-700 border-sky-200',
-                          'bg-slate-100 text-slate-700 border-slate-200',
-                          'bg-indigo-50 text-indigo-700 border-indigo-200',
-                      ];
-                      return (
-                          <span 
-                          key={tag} 
-                          className={`px-2.5 py-1 rounded-md text-xs font-semibold border ${styles[i % styles.length]}`}
-                          >
-                          {tag}
-                          </span>
-                      );
-                    })}
-                  </div>
+                    <ArrowUpRight size={16} className="text-gray-300 group-hover:text-black transition-colors duration-300" />
+                 </div>
 
-                  <div className="pt-5 border-t border-slate-100 mt-auto">
-                     {project.githubUrl && (
-                      <a 
-                          href={project.githubUrl}
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="block w-full"
-                      >
-                          <motion.button 
-                              whileHover={{ scale: 1.02 }}
-                              whileTap={{ scale: 0.98 }}
-                              transition={{ type: "spring", stiffness: 400, damping: 20 }}
-                              className="w-full py-2.5 rounded-lg bg-slate-900 text-white font-medium text-sm hover:bg-blue-600 transition-colors shadow-sm flex items-center justify-center gap-2 group/btn"
-                          >
-                              <Github size={16} />
-                              View Project 
-                              <ExternalLink size={14} className="group-hover/btn:translate-x-1 transition-transform opacity-70" />
-                          </motion.button>
-                      </a>
-                     )}
-                  </div>
-                </div>
-              </motion.div>
+                 <p className="text-xs text-gray-500 leading-relaxed mb-4 font-sans line-clamp-4">
+                   {project.description}
+                 </p>
+
+                 <div className="mt-auto">
+                   <div className="flex flex-wrap gap-x-2 gap-y-1">
+                     {project.tags.slice(0, 3).map(tag => (
+                       <span key={tag} className="text-[9px] font-mono uppercase tracking-wider text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded-sm">
+                         {tag}
+                       </span>
+                     ))}
+                   </div>
+                 </div>
+              </div>
             </motion.div>
           ))}
         </div>

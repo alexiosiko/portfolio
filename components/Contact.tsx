@@ -1,81 +1,61 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../constants';
 import { Mail, Linkedin, Github } from 'lucide-react';
-import Button from './Button';
 import { motion } from 'framer-motion';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-24 relative z-10 border-t border-slate-100">
+    <section id="contact" className="py-32 bg-black text-white overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 text-center">
         
-        <motion.div
-           initial={{ opacity: 0, scale: 0.9 }}
-           whileInView={{ opacity: 1, scale: 1 }}
-           viewport={{ once: true, margin: "-50px" }}
-           transition={{ type: "spring", stiffness: 400, damping: 20 }}
-        >
-          <h2 className="text-5xl md:text-6xl font-display font-bold text-theme-text mb-8">
-              Ready to collaborate?
-          </h2>
-          <p className="text-xl md:text-2xl text-theme-subtext mb-12 font-light max-w-2xl mx-auto">
-              I'm available for new opportunities in software and game development.
-          </p>
-
-          <div className="flex flex-col items-center gap-8 mb-16">
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                  <a href={`mailto:${PERSONAL_INFO.email}`}>
-                      <Button variant="primary" className="h-14 px-10 text-lg rounded-lg shadow-lg hover:shadow-xl shadow-blue-500/20">
-                          <Mail size={20} /> Send Email
-                      </Button>
-                  </a>
-                  <div className="flex gap-4">
-                      <motion.a 
-                        whileHover={{ scale: 1.1, rotate: 5 }}
-                        whileTap={{ scale: 0.9 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        href={PERSONAL_INFO.social.linkedin} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="p-4 rounded-lg bg-white text-slate-700 hover:bg-blue-50 hover:text-[#0077b5] transition-colors shadow-sm border border-slate-200"
-                      >
-                          <Linkedin size={24} />
-                      </motion.a>
-                      <motion.a 
-                        whileHover={{ scale: 1.1, rotate: -5 }}
-                        whileTap={{ scale: 0.9 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        href={PERSONAL_INFO.social.github} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="p-4 rounded-lg bg-white text-slate-700 hover:bg-slate-50 hover:text-black transition-colors shadow-sm border border-slate-200"
-                      >
-                          <Github size={24} />
-                      </motion.a>
-                  </div>
-              </div>
-
-              {/* Explicit Email Display */}
-              <div className="flex flex-col items-center justify-center gap-2 mt-2">
-                <span className="text-theme-subtext text-sm uppercase tracking-wide font-medium opacity-80">
-                  Or contact me directly at:
-                </span>
-                <span className="text-lg md:text-xl font-bold text-theme-text select-all hover:text-theme-primary transition-colors cursor-text border-b-2 border-transparent hover:border-theme-primary/20">
-                  {PERSONAL_INFO.email}
-                </span>
-              </div>
-          </div>
-        </motion.div>
-
-        <motion.div 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+        <motion.h2 
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-          className="text-slate-400 text-sm"
+          transition={{ duration: 0.8 }}
+          className="text-6xl md:text-8xl font-display font-medium mb-12 tracking-tight"
         >
-          <p>© {new Date().getFullYear()} Alexi Ikonomou.</p>
-        </motion.div>
+            Let's Collaborate
+        </motion.h2>
+
+        <div className="flex flex-col items-center gap-10">
+            <a href={`mailto:${PERSONAL_INFO.email}`}>
+                <motion.button 
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-10 py-5 bg-white text-black font-mono font-bold text-sm uppercase tracking-widest hover:bg-gray-200 transition-colors"
+                >
+                   Send an Email
+                </motion.button>
+            </a>
+            
+            <div className="w-px h-16 bg-gray-800 my-4"></div>
+
+            <div className="flex gap-8 justify-center">
+                <a 
+                  href={PERSONAL_INFO.social.linkedin} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                    <Linkedin size={28} strokeWidth={1.5} />
+                </a>
+                <a 
+                  href={PERSONAL_INFO.social.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                    <Github size={28} strokeWidth={1.5} />
+                </a>
+            </div>
+
+            <div className="mt-32 pt-8 border-t border-gray-900 w-full flex justify-end items-end font-mono text-[10px] text-gray-600 uppercase tracking-widest">
+               <div>
+                 © {new Date().getFullYear()} Alexi Ikonomou
+               </div>
+            </div>
+        </div>
       </div>
     </section>
   );
