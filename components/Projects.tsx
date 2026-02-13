@@ -5,68 +5,75 @@ import { motion } from 'framer-motion';
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-20 bg-white border-t border-gray-100">
+    <section id="projects" className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 border-b border-gray-100 pb-4">
+        <div className="flex flex-col md:flex-row justify-between items-baseline mb-24 border-b border-black pb-8 overflow-hidden">
           <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: "100%" }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 0.35, ease: [0.19, 1, 0.22, 1] }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-3xl md:text-5xl font-display font-medium tracking-tight"
+            className="text-5xl md:text-8xl font-display font-bold tracking-tighter"
           >
-            Selected Work
+            SOME PROJECTS
           </motion.h2>
-          <p className="font-mono text-xs tracking-widest uppercase mb-1 text-gray-400">
-            Archive [{PROJECTS.length}]
-          </p>
+          <span className="font-mono text-[10px] text-gray-400 uppercase tracking-[0.4em] mt-4 md:mt-0">The Archive</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+        <div className="space-y-40">
           {PROJECTS.map((project, index) => (
             <motion.div 
               key={project.id}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
-              className="group flex flex-col h-full cursor-pointer"
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.35, ease: [0.19, 1, 0.22, 1] }}
+              className="group grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
             >
-              {/* Image Container */}
-              <a href={project.githubUrl} target="_blank" rel="noreferrer" className="block mb-4 overflow-hidden bg-gray-50 relative aspect-video border border-gray-100">
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 z-10" />
+              {/* Project Image */}
+              <div className="lg:col-span-7 overflow-hidden bg-gray-50 border border-gray-100 aspect-video relative">
                 <img 
                   src={project.imageUrl} 
                   alt={project.title} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-out transform group-hover:scale-105"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-105"
                   onError={(e) => {
-                      e.currentTarget.src = `https://placehold.co/600x400/eeeeee/111111?text=${encodeURIComponent(project.title)}`;
+                      e.currentTarget.src = `https://placehold.co/1200x800/111111/ffffff?text=${encodeURIComponent(project.title)}`;
                   }}
                 />
-              </a>
+              </div>
 
-              {/* Text Content */}
-              <div className="flex flex-col flex-grow">
-                 <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-base font-display font-bold leading-tight group-hover:underline decoration-1 underline-offset-4">
-                      {project.title}
-                    </h3>
-                    <ArrowUpRight size={16} className="text-gray-300 group-hover:text-black transition-colors duration-300" />
-                 </div>
+              {/* Project Info */}
+              <div className="lg:col-span-5">
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="font-mono text-[10px] font-bold text-black/20">0{index + 1}</span>
+                  <div className="h-px flex-1 bg-black/5"></div>
+                </div>
+                
+                <h3 className="text-4xl font-display font-bold mb-4 tracking-tight leading-none group-hover:text-gray-500 transition-colors">
+                  {project.title}
+                </h3>
+                
+                <p className="text-lg text-theme-subtext font-light leading-relaxed mb-8">
+                  {project.description}
+                </p>
 
-                 <p className="text-xs text-gray-500 leading-relaxed mb-4 font-sans line-clamp-4">
-                   {project.description}
-                 </p>
+                <div className="flex flex-wrap gap-2 mb-10">
+                  {project.tags.map(tag => (
+                    <span key={tag} className="text-[9px] font-mono border border-black/10 bg-gray-50 px-3 py-1 text-gray-400 uppercase tracking-widest">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
 
-                 <div className="mt-auto">
-                   <div className="flex flex-wrap gap-x-2 gap-y-1">
-                     {project.tags.slice(0, 3).map(tag => (
-                       <span key={tag} className="text-[9px] font-mono uppercase tracking-wider text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded-sm">
-                         {tag}
-                       </span>
-                     ))}
-                   </div>
-                 </div>
+                <a 
+                  href={project.githubUrl} 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="inline-flex items-center gap-3 font-mono text-[10px] font-bold uppercase tracking-[0.3em] group/link"
+                >
+                  <span className="pb-1 border-b border-black">Open Project</span> 
+                  <ArrowUpRight size={14} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                </a>
               </div>
             </motion.div>
           ))}
